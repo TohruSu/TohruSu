@@ -1,4 +1,6 @@
-## Hi there 👋
+## My GitHub Contributions
+
+![](./profile-3d-contrib/profile-green-animate.svg)
 
 <!--
 **TohruSu/TohruSu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
