@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Retail segmentation diagnostics</title>
+<desc id="desc">Silhouette scores for k two through five on 720 independently generated synthetic retail records: 0.178, 0.154, 0.147, and 0.137. All scores indicate weak separation.</desc>
+<rect x="1" y="1" width="958" height="478" rx="16" fill="#171D24" stroke="#29333E"/>
+<text x="36" y="51" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="34" font-weight="700">Retail segmentation</text>
+<text x="924" y="49" fill="#C49A72" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="24" font-weight="600" text-anchor="end">SYNTHETIC</text>
+<text x="38" y="85" fill="#AAB5BD" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="24">720 records · seed 2026 · PCA + KMeans</text>
+<line x1="36" y1="104" x2="924" y2="104" stroke="#29333E" stroke-width="1.5"/>
+<text x="66" y="149" fill="#AAB5BD" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="25">Candidate clusters</text>
+<text x="410" y="149" fill="#AAB5BD" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="25">Silhouette score</text>
+<text x="90" y="223" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">k=2</text>
+<rect x="410" y="196" width="370" height="31" rx="4" fill="#29333E"/>
+<rect x="410" y="196" width="329" height="31" rx="4" fill="#C49A72"/>
+<text x="815" y="223" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">0.178</text>
+<text x="90" y="284" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">k=3</text>
+<rect x="410" y="257" width="370" height="31" rx="4" fill="#29333E"/>
+<rect x="410" y="257" width="285" height="31" rx="4" fill="#71818B"/>
+<text x="815" y="284" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">0.154</text>
+<text x="90" y="345" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">k=4</text>
+<rect x="410" y="318" width="370" height="31" rx="4" fill="#29333E"/>
+<rect x="410" y="318" width="272" height="31" rx="4" fill="#71818B"/>
+<text x="815" y="345" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">0.147</text>
+<text x="90" y="406" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">k=5</text>
+<rect x="410" y="379" width="370" height="31" rx="4" fill="#29333E"/>
+<rect x="410" y="379" width="253" height="31" rx="4" fill="#71818B"/>
+<text x="815" y="406" fill="#F0ECE5" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="28">0.137</text>
+<text x="38" y="465" fill="#AAB5BD" font-family="ui-sans-serif, DejaVu Sans, sans-serif" font-size="24">Weak separation across candidate partitions · illustrative data</text>
+</svg>
