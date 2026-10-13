@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero.svg" width="960" alt="Tohru — software, systems, and applied AI. A navy engineering panel with an abstract signal trace.">
+  <img src="./assets/hero.svg" width="960" alt="Tohru — software, systems, and applied AI. A graphite engineering panel with an abstract signal trace.">
 </picture>
 
 # Hi, I'm Tohru.
@@ -47,7 +47,7 @@ A Linux toolkit for measuring application-observed wake-up lateness and analyzin
 - **My contribution:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and optional visualizations.
 - **Validation:** C/Python unit and integration tests, ASan/UBSan, and GCC/Clang GitHub Actions; measurements describe application observations.
 
-**[Explore the project →](https://github.com/TohruSu/linux-wakeup-latency-benchmark)**
+**[View the v0.1.0 release](https://github.com/TohruSu/linux-wakeup-latency-benchmark/releases/tag/v0.1.0)**
 
 ### [Autonomous Tractor Navigation Simulation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)
 
@@ -59,7 +59,7 @@ A standalone toolkit for reproducible path tracking and controller evaluation on
 - **My contribution:** Seven synthetic scenarios, CSV evaluation metrics, and reproducible trajectory comparisons across four controller configurations.
 - **Validation:** 61 automated tests, repeatable CSV/SVG outputs, and GitHub Actions; synthetic results do not establish real-vehicle performance.
 
-**[Explore the project →](https://github.com/TohruSu/autonomous-tractor-navigation-sim)**
+**[View the v0.1.0 release](https://github.com/TohruSu/autonomous-tractor-navigation-sim/releases/tag/v0.1.0)**
 
 ### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
 
@@ -71,7 +71,7 @@ A university team prototype combining pose-based fall detection, speech help key
 - **My contribution:** Depth Anything V2 integration, person ROI processing, relative-depth classification, and pose-to-depth handoff.
 - **Validation:** 132 automated tests, a five-worker synthetic smoke test, and GitHub Actions; real-hardware accuracy and performance remain unverified.
 
-**[Explore the project →](https://github.com/TohruSu/jetson-multimodal-emergency-detection)**
+**[View the v0.1.0 release](https://github.com/TohruSu/jetson-multimodal-emergency-detection/releases/tag/v0.1.0)**
 
 ## Technical toolkit
 
