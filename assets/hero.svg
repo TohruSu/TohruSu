@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="248" viewBox="0 0 960 248" role="img" aria-labelledby="title desc">
+  <title id="title">Tohru — software, systems, and applied AI</title>
+  <desc id="desc">An original navy instrument panel with cyan, blue, and violet signal paths. The abstract trace is decorative, not measured data.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101d31"/>
+      <stop offset="1" stop-color="#111321"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#67e8f9"/>
+      <stop offset="0.55" stop-color="#7aa8ff"/>
+      <stop offset="1" stop-color="#b7a2ff"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 H 0 V 28" fill="none" stroke="#93a8ce" stroke-opacity="0.09"/>
+    </pattern>
+    <clipPath id="panelClip"><rect x="1" y="1" width="958" height="246" rx="18"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="958" height="246" rx="18" fill="url(#panel)" stroke="#35415a"/>
+  <g clip-path="url(#panelClip)">
+    <rect x="548" y="53" width="412" height="195" fill="url(#grid)"/>
+    <path d="M 34 53 H 926" stroke="#35415a"/>
+    <g fill="#899bb9">
+      <circle cx="38" cy="29" r="4"/>
+      <circle cx="53" cy="29" r="4"/>
+      <circle cx="68" cy="29" r="4"/>
+    </g>
+    <text x="88" y="35" fill="#b8c6df" font-family="ui-monospace, 'DejaVu Sans Mono', monospace" font-size="16">~/tohru</text>
+    <path d="M 562 182 H 601 L 626 155 H 667 L 695 116 H 743 L 771 144 H 811 L 839 96 H 925" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 562 197 H 626 L 654 170 H 725 L 753 183 H 811 L 852 137 H 925" fill="none" stroke="#7aa8ff" stroke-opacity="0.25" stroke-width="2" stroke-linejoin="round"/>
+    <g fill="#111827" stroke-width="2.5">
+      <circle cx="626" cy="155" r="5" stroke="#67e8f9"/>
+      <circle cx="743" cy="116" r="5" stroke="#7aa8ff"/>
+      <circle cx="839" cy="96" r="5" stroke="#b7a2ff"/>
+    </g>
+    <path d="M 925 87 V 105 M 916 96 H 934" stroke="#b7a2ff" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="36" y="145" fill="#f1f5ff" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="72" font-weight="700" letter-spacing="-2">TOHRU<tspan fill="#67e8f9">.</tspan></text>
+    <text x="39" y="191" fill="#c8d4ec" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="25">Software / Systems / Applied AI</text>
+    <path d="M 39 215 H 79" stroke="#67e8f9" stroke-width="3"/>
+    <path d="M 83 215 H 103" stroke="#7aa8ff" stroke-width="3"/>
+    <path d="M 107 215 H 117" stroke="#b7a2ff" stroke-width="3"/>
+  </g>
+</svg>
