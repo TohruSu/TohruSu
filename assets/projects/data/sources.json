@@ -18,5 +18,21 @@
       "main.py": "b6ff516b995d5bdbd987836d85b19131787a0758bb761cdfab11eb1a06aba684",
       "common/simscript.py": "9d70bb5882763a5010f7fa98bb4097aa699e5b45799d8651bae73597e6e257d4"
     }
+  },
+  "retail": {
+    "commit": "6af50c59b9bfe9185302a52227a9f2eb09eef9ae",
+    "n_rows": 720,
+    "seed": 2026,
+    "silhouette_by_k": {
+      "2": 0.178,
+      "3": 0.154,
+      "4": 0.147,
+      "5": 0.137
+    },
+    "source_paths": [
+      "README.md",
+      "assets/synthetic_diagnostics.svg",
+      "docs/SYNTHETIC_DATA.md"
+    ]
   }
 }
