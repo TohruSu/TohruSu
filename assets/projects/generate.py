@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild the three profile previews offline using only Python's standard library."""
+"""Rebuild four profile previews offline using only Python's standard library."""
 
 import csv
 import hashlib
@@ -191,12 +191,48 @@ def architecture_preview():
     write("jetson-architecture.svg", svg)
 
 
+
+def retail_preview(sources):
+    """Render the documented, synthetic k=2..5 silhouette comparison."""
+    reference = sources["retail"]
+    values = reference["silhouette_by_k"]
+    if sorted(values) != ["2", "3", "4", "5"]:
+        raise ValueError("Expected four documented candidate cluster counts.")
+    if any(not 0 <= float(value) <= 0.2 for value in values.values()):
+        raise ValueError("Review changes to the preview scale before regenerating.")
+
+    svg = frame(
+        "Retail segmentation",
+        f'{reference["n_rows"]} records · seed {reference["seed"]} · PCA + KMeans',
+        "SYNTHETIC",
+        "Silhouette scores on independent synthetic retail data. Weak separation "
+        "across all candidates; k=2 through k=5.",
+    )
+    svg += [
+        text(66, 149, "Candidate clusters", 25, MUTED),
+        text(410, 149, "Silhouette score", 25, MUTED),
+    ]
+    for index, k in enumerate(("2", "3", "4", "5")):
+        value = float(values[k])
+        y = 196 + 61 * index
+        width = round(value / 0.2 * 370)
+        svg += [
+            text(90, y + 27, f"k={k}", 28),
+            f'<rect x="410" y="{y}" width="370" height="31" rx="4" fill="{SURFACE}"/>',
+            f'<rect x="410" y="{y}" width="{width}" height="31" rx="4" fill="{COPPER if index == 0 else STEEL}"/>',
+            text(815, y + 27, f"{value:.3f}", 28),
+        ]
+    svg.append(text(38, 465, "Weak separation across candidate partitions · illustrative data", 24, MUTED))
+    write("retail-segmentation.svg", svg)
+
+
 def main():
     sources = json.loads((DATA / "sources.json").read_text())
     latency_preview(sources)
     navigation_preview(sources)
     architecture_preview()
-    print("Regenerated three 960 × 480 previews from local pinned sources; no external packages or network needed.")
+    retail_preview(sources)
+    print("Regenerated four 960 × 480 previews from local pinned sources; no external packages or network needed.")
 
 
 if __name__ == "__main__":
