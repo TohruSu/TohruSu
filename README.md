@@ -43,6 +43,8 @@ Three ways I approach engineering: measure a system, model its behavior, and con
 
 A Linux toolkit for measuring application-observed wake-up lateness and analyzing the resulting CSV data.
 
+<img src="./assets/projects/linux-ecdf.svg" width="640" alt="Synthetic ECDF for fixture latencies 0, 10, 20, 30, and 100 ns: four of five observations are at or below 30 ns. Not hardware measurements.">
+
 - **Core implementation:** Absolute monotonic scheduling, checked timestamp arithmetic, and skipped-period accounting.
 - **My contribution:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and optional visualizations.
 - **Validation:** C/Python unit and integration tests, ASan/UBSan, and GCC/Clang GitHub Actions; measurements describe application observations.
@@ -55,6 +57,8 @@ A Linux toolkit for measuring application-observed wake-up lateness and analyzin
 
 A standalone toolkit for reproducible path tracking and controller evaluation on synthetic routes.
 
+<img src="./assets/projects/navigation-tracking.svg" width="640" alt="Synthetic 6 m left-turn simulation from a +0.5 m initial offset: original reference, Stanley, and Pure Pursuit paths, with RMS cross-track errors of 0.236 m and 0.170 m respectively. Not field data.">
+
 - **Core implementation:** Stanley and Pure Pursuit controllers, deterministic kinematic bicycle simulation, and steering constraints.
 - **My contribution:** Seven synthetic scenarios, CSV evaluation metrics, and reproducible trajectory comparisons across four controller configurations.
 - **Validation:** 61 automated tests, repeatable CSV/SVG outputs, and GitHub Actions; synthetic results do not establish real-vehicle performance.
@@ -66,6 +70,8 @@ A standalone toolkit for reproducible path tracking and controller evaluation on
 *Python · Jetson Nano · Depth Anything V2 · Multiprocessing · PyQt5*
 
 A university team prototype combining pose-based fall detection, speech help keywords, and relative depth for contextual alerts.
+
+<img src="./assets/projects/jetson-architecture.svg" width="640" alt="Architecture illustration: video and pose supply fall events and person ROIs; optional relative depth and speech help keywords feed event fusion and a PyQt5 monitor. Not an application screenshot or hardware result.">
 
 - **Core implementation:** Team-developed sensor/inference workers, an event-fusion state machine, and a PyQt5 monitoring interface.
 - **My contribution:** Depth Anything V2 integration, person ROI processing, relative-depth classification, and pose-to-depth handoff.
@@ -94,10 +100,6 @@ Performance measurement · Automated testing · Sanitizers
 
 Computer vision · Relative depth estimation · Multimodal sensing<br>
 Reinforcement learning · Path-tracking simulation
-
-## On GitHub
-
-[Browse my repositories](https://github.com/TohruSu?tab=repositories) · [See contribution activity](https://github.com/TohruSu?tab=overview)
 
 ## Beyond the code
 

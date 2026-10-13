@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Multimodal event flow</title>
+<desc id="desc">Video and pose generate fall events and person ROIs. Optional relative depth adds context; speech supplies help keywords. Fusion supplies alerts to PyQt5, which also displays frames, depth, and health. This is an architecture illustration, not a hardware result.</desc>
+<rect x="1" y="1" width="958" height="478" rx="16" fill="#171D24" stroke="#29333E"/>
+<text x="36" y="51" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="34" font-weight="700" text-anchor="start">Multimodal event flow</text>
+<text x="924" y="49" fill="#C49A72" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="600" text-anchor="end">ARCHITECTURE</text>
+<text x="38" y="85" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">Documented application design · not a screenshot</text>
+<line x1="36.00" y1="104.00" x2="924.00" y2="104.00" stroke="#29333E" stroke-width="1.5" />
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 Z" fill="#C49A72"/></marker>
+<marker id="steel-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 Z" fill="#71818B"/></marker></defs>
+<path d="M 308 189 H 342" fill="none" stroke="#C49A72" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 174 238 V 294" fill="none" stroke="#71818B" stroke-width="2" marker-end="url(#steel-arrow)"/>
+<path d="M 308 343 H 324 V 265 H 408 V 238" fill="none" stroke="#71818B" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#steel-arrow)"/>
+<path d="M 476 294 V 238" fill="none" stroke="#C49A72" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 610 189 H 633 V 259 H 656" fill="none" stroke="#C49A72" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 174 140 V 118 H 789 V 207" fill="none" stroke="#71818B" stroke-width="1.5" marker-end="url(#steel-arrow)"/>
+<rect x="40" y="140" width="268" height="98" rx="12" fill="#29333E" stroke="#71818B" stroke-width="1.5"/>
+<text x="174.0" y="179" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle">Video / pose</text>
+<text x="174.0" y="213" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">Fall detection</text>
+<rect x="40" y="294" width="268" height="98" rx="12" fill="#29333E" stroke="#71818B" stroke-width="1.5"/>
+<text x="174.0" y="333" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle">Relative depth</text>
+<text x="174.0" y="367" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">Optional context</text>
+<rect x="342" y="140" width="268" height="98" rx="12" fill="#29333E" stroke="#C49A72" stroke-width="1.5"/>
+<text x="476.0" y="179" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle">Event fusion</text>
+<text x="476.0" y="213" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">L1 / L2 alerts</text>
+<rect x="342" y="294" width="268" height="98" rx="12" fill="#29333E" stroke="#71818B" stroke-width="1.5"/>
+<text x="476.0" y="333" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle">Audio / speech</text>
+<text x="476.0" y="367" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">Help keywords</text>
+<rect x="656" y="207" width="266" height="123" rx="12" fill="#29333E" stroke="#71818B" stroke-width="1.5"/>
+<text x="789" y="247" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle">PyQt5 monitor</text>
+<text x="789" y="281" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">Frames + depth</text>
+<text x="789" y="311" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="middle">Alerts + health</text>
+<text x="192" y="272" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">ROI</text>
+<text x="494" y="272" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">help</text>
+<text x="795" y="170" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">frame</text>
+<text x="40" y="448" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="26" font-weight="400" text-anchor="start">Relative depth adds context; it is not calibrated distance.</text>
+</svg>
