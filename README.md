@@ -1,73 +1,108 @@
-# Hi, I'm Tohru
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg">
+  <img src="./assets/hero.svg" width="960" alt="Tohru — software, systems, and applied AI. A graphite engineering panel with an abstract signal trace.">
+</picture>
 
-**Software Engineering · Backend Development · Linux Systems · Applied AI**
+# Hi, I'm Tohru.
 
-I develop backend systems and web applications, with experience in Python, Java, JavaScript/TypeScript, and applied AI. My Linux measurement toolkit uses C and Python, with an emphasis on validation, testing, and clear documentation.
+**Software engineering, with a systems mindset.**
 
-## About Me
+Master's student at **Waseda University**, Graduate School of Information, Production and Systems · Expected graduation: **March 2028**.
 
-I'm a master's student at the **Graduate School of Information, Production and Systems, Waseda University**, expecting to graduate in **March 2028**. I earned a **Bachelor of Engineering in Software Engineering** from **Xiamen University**.
+[Featured projects](#featured-projects) · [Experience](#experience-highlights) · [Toolkit](#technical-toolkit) · [Beyond the code](#beyond-the-code)
 
-I'm currently exploring hardware design, verification, and optimization, building on my background in software engineering.
+## About me
 
-### Selected Experience
+I enjoy building backend services and web applications, then looking closer at how they behave: timing on Linux, data flowing between components, and the boundaries of an AI prototype. I care about clear interfaces, reproducible tests, and documentation that makes the results easy to inspect.
 
-- **Rakuten Group — Software Engineering Internship:** Developed Python/Flask backend features and search logic, and improved the React/TypeScript UI of a furniture combination search web app.
-- **TokiTech:** Contributed to business web system development and maintenance using Java/Spring Boot, Vue.js, and databases.
-- **DENSO:** Evaluated automotive SoC performance through C programming, experimental measurements, and issue analysis.
+My background spans software engineering, computer vision, multimodal sensing, and control simulation. I hold a **Bachelor of Engineering in Software Engineering from Xiamen University**.
 
-### Research & Applied AI
+## Now exploring
 
-- **Bachelor's research:** Built a reinforcement learning framework for automated penetration testing using Python, Q-learning, and DQN.
-- **Multimodal AI applications:** Contributed to depth estimation, pose detection, and real-time visualization features.
-- **Additional practical experience:** Data analysis and autonomous driving control systems.
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/prompt.svg">
+  <img src="./assets/prompt.gif" width="24" height="16" alt="">
+</picture> <strong>Learning focus</strong>
 
-## Featured Projects
+**Deepening:** systems programming, performance analysis, and backend design.<br>
+**Exploring:** applied AI, hardware-aware computing, and hardware design, verification, and optimization.
+
+## Experience highlights
+
+- **Rakuten Group · Software engineering internship** — Python/Flask backend features and search logic; React/TypeScript UI improvements for a furniture combination search app.
+- **DENSO · Automotive SoC performance evaluation** — C programming, experimental measurements, and issue analysis.
+- **TokiTech · Web system development** — Business web systems using Java/Spring Boot, Vue.js, and databases.
+
+## Featured projects
+
+Three ways I approach engineering: measure a system, model its behavior, and connect its components.
 
 ### [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)
 
-**C11 · Linux/POSIX · Python · GitHub Actions**
+*C11 · Linux/POSIX · Python · GitHub Actions*
 
-A Linux toolkit for measuring application-observed wake-up lateness and analyzing validated CSV results.
+A Linux toolkit for measuring application-observed wake-up lateness and analyzing the resulting CSV data.
 
-- **C collector:** Absolute monotonic scheduling, checked timestamp arithmetic, skipped-period accounting, and error handling.
-- **Python analysis:** Strict CSV validation, statistical summaries, explicit incomplete-run classification, and optional Matplotlib plots.
-- **Engineering:** GCC/Clang builds, unit and integration tests, AddressSanitizer/UndefinedBehaviorSanitizer checks, and GitHub Actions CI.
+<img src="./assets/projects/linux-ecdf.svg" width="640" alt="Synthetic ECDF for fixture latencies 0, 10, 20, 30, and 100 ns: four of five observations are at or below 30 ns. Not hardware measurements.">
 
-[View the v0.1.0 release](https://github.com/TohruSu/linux-wakeup-latency-benchmark/releases/tag/v0.1.0)
+- **Core implementation:** Absolute monotonic scheduling, checked timestamp arithmetic, and skipped-period accounting.
+- **My contribution:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and optional visualizations.
+- **Validation:** C/Python unit and integration tests, ASan/UBSan, and GCC/Clang GitHub Actions; measurements describe application observations.
 
+**[View the v0.1.0 release](https://github.com/TohruSu/linux-wakeup-latency-benchmark/releases/tag/v0.1.0)**
 
 ### [Autonomous Tractor Navigation Simulation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)
 
-**C# · .NET 10 · Stanley / Pure Pursuit · GitHub Actions**
+*C# · .NET 10 · Stanley / Pure Pursuit · GitHub Actions*
 
-A standalone C# toolkit for reproducible path-tracking simulations and controller evaluation on synthetic routes.
+A standalone toolkit for reproducible path tracking and controller evaluation on synthetic routes.
 
-- **Navigation & control:** Straight and curved routes, Stanley and Pure Pursuit controllers, and steering-angle/rate constraints.
-- **Simulation & evaluation:** Deterministic kinematic bicycle model, seven synthetic scenarios, four controller configurations, and CSV tracking-error metrics.
-- **Engineering:** 61 automated tests, explicit timeout and numerical-failure reporting, reproducible CSV/SVG trajectory comparisons, and GitHub Actions CI.
+<img src="./assets/projects/navigation-tracking.svg" width="640" alt="Synthetic 6 m left-turn simulation from a +0.5 m initial offset: original reference, Stanley, and Pure Pursuit paths, with RMS cross-track errors of 0.236 m and 0.170 m respectively. Not field data.">
 
-[View the v0.1.0 release](https://github.com/TohruSu/autonomous-tractor-navigation-sim/releases/tag/v0.1.0)
+- **Core implementation:** Stanley and Pure Pursuit controllers, deterministic kinematic bicycle simulation, and steering constraints.
+- **My contribution:** Seven synthetic scenarios, CSV evaluation metrics, and reproducible trajectory comparisons across four controller configurations.
+- **Validation:** 61 automated tests, repeatable CSV/SVG outputs, and GitHub Actions; synthetic results do not establish real-vehicle performance.
+
+**[View the v0.1.0 release](https://github.com/TohruSu/autonomous-tractor-navigation-sim/releases/tag/v0.1.0)**
 
 ### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
 
-**Python · Jetson Nano · Depth Anything V2 · Multiprocessing · PyQt5**
+*Python · Jetson Nano · Depth Anything V2 · Multiprocessing · PyQt5*
 
-A university team prototype combining pose-based fall detection, speech help keywords, and relative depth to provide contextual emergency alerts.
+A university team prototype combining pose-based fall detection, speech help keywords, and relative depth for contextual alerts.
 
-- **My contribution:** Depth Anything V2 integration, person-ROI depth processing, relative-depth classification, and pose-to-depth data handoff.
-- **System:** Multiprocessing sensor/inference workers, event-fusion state machine, and PyQt5 monitoring interface.
-- **Validation:** 132 software tests, a five-worker synthetic smoke test, offscreen GUI checks, and GitHub Actions CI; real-hardware accuracy and performance remain unverified.
+<img src="./assets/projects/jetson-architecture.svg" width="640" alt="Architecture illustration: video and pose supply fall events and person ROIs; optional relative depth and speech help keywords feed event fusion and a PyQt5 monitor. Not an application screenshot or hardware result.">
 
-[Explore the project](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
+- **Core implementation:** Team-developed sensor/inference workers, an event-fusion state machine, and a PyQt5 monitoring interface.
+- **My contribution:** Depth Anything V2 integration, person ROI processing, relative-depth classification, and pose-to-depth handoff.
+- **Validation:** 132 automated tests, a five-worker synthetic smoke test, and GitHub Actions; real-hardware accuracy and performance remain unverified.
 
-## Technical Skills
+**[View the v0.1.0 release](https://github.com/TohruSu/jetson-multimodal-emergency-detection/releases/tag/v0.1.0)**
 
-| Category          | Technologies                          |
-| ----------------- | ------------------------------------- |
-| Primary Languages | Python, Java, JavaScript / TypeScript |
-| Other Languages   | C / C++, C#                           |
-| Frontend          | React, Vue.js                         |
-| Backend           | Spring Boot, Flask                    |
-| Databases         | MySQL, SQLite (SQL)                   |
-| Tools             | Git, Linux                            |
+## Technical toolkit
+
+### <img src="./assets/languages.svg" width="20" height="20" alt=""> Languages
+
+**Primary:** Python · Java · JavaScript / TypeScript<br>
+**Also used:** C / C++ · C#
+
+### <img src="./assets/web.svg" width="20" height="20" alt=""> Backend & web
+
+Spring Boot · Flask · React · Vue.js<br>
+MySQL · SQLite
+
+### <img src="./assets/systems.svg" width="20" height="20" alt=""> Systems & tools
+
+Linux/POSIX · Git · GitHub Actions<br>
+Performance measurement · Automated testing · Sanitizers
+
+### <img src="./assets/applied.svg" width="20" height="20" alt=""> Applied engineering
+
+Computer vision · Relative depth estimation · Multimodal sensing<br>
+Reinforcement learning · Path-tracking simulation
+
+## Beyond the code
+
+Away from the terminal, you'll find me at the piano, on a badminton court, or working on a music or video edit. I communicate in **Chinese, Japanese, and English**.
+
+Thanks for stopping by. Pick a project above and take a look at how it works.

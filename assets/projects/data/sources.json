@@ -1,0 +1,22 @@
+{
+  "linux": {
+    "commit": "b41c5a06f044565e6406c727aff12b483221663f",
+    "fixture_sha256": "206abb5124b7aeafe9ef6ea6a3e998ccdcfd11aa7ffd96cd0552d4691b326fdc",
+    "source_path": "tests/fixtures/schema-v1/complete.csv"
+  },
+  "navigation": {
+    "commit": "106afc34753a835a9dfc6d08c5ed9f8ae3c6216d",
+    "source_svg_sha256": "2826fec29fe7db4aa2000b8c301474edb1b384acca53ccd55ba7c4465059ca22",
+    "geometry_sha256": "93e4cdc198f78536ac808ab9de1817f481b34599ad49696adc92302f3df3d64f"
+  },
+  "jetson": {
+    "commit": "7cc1bd7180a40df802192e7c6fa216df91d5cc04",
+    "sources": {
+      "README.md": "28c7357b46ca66cb89e34de79d780dfeaa60c19860169405866df2fa2267ece1",
+      "docs/ARCHITECTURE.md": "80e19e61018986c55f668c4e64f1b43b407b17f07e8a4edf4c8ae925dd093cfb",
+      "ui/main_window.py": "21c224119952a9771bc77f4eaf654a3ed63e2294cf2a56c77b325401c080862e",
+      "main.py": "b6ff516b995d5bdbd987836d85b19131787a0758bb761cdfab11eb1a06aba684",
+      "common/simscript.py": "9d70bb5882763a5010f7fa98bb4097aa699e5b45799d8651bae73597e6e257d4"
+    }
+  }
+}

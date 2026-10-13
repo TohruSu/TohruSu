@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Latency distribution</title>
+<desc id="desc">ECDF of synthetic latencies 0, 10, 20, 30, and 100 ns. Four of five observations are at or below 30 ns; the ECDF there is 0.8.</desc>
+<rect x="1" y="1" width="958" height="478" rx="16" fill="#171D24" stroke="#29333E"/>
+<text x="36" y="51" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="34" font-weight="700" text-anchor="start">Latency distribution</text>
+<text x="924" y="49" fill="#C49A72" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="600" text-anchor="end">SYNTHETIC</text>
+<text x="38" y="85" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">CSV fixture · 5 observations · not hardware measurements</text>
+<line x1="36.00" y1="104.00" x2="924.00" y2="104.00" stroke="#29333E" stroke-width="1.5" />
+<line x1="118.00" y1="398.00" x2="902.00" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="100" y="407" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="end">0.0</text>
+<line x1="118.00" y1="271.00" x2="902.00" y2="271.00" stroke="#29333E" stroke-width="1.5" />
+<text x="100" y="280.0" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="end">0.5</text>
+<line x1="118.00" y1="144.00" x2="902.00" y2="144.00" stroke="#29333E" stroke-width="1.5" />
+<text x="100" y="153" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="end">1.0</text>
+<line x1="118.00" y1="144.00" x2="118.00" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="118.0" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">0</text>
+<line x1="274.80" y1="144.00" x2="274.80" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="274.8" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">20</text>
+<line x1="431.60" y1="144.00" x2="431.60" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="431.6" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">40</text>
+<line x1="588.40" y1="144.00" x2="588.40" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="588.4" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">60</text>
+<line x1="745.20" y1="144.00" x2="745.20" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="745.2" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">80</text>
+<line x1="902.00" y1="144.00" x2="902.00" y2="398.00" stroke="#29333E" stroke-width="1.5" />
+<text x="902.0" y="433" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">100</text>
+<path id="ecdf-area" d="M 118.00,398.00 L 118.00,398.00 L 118.00,347.20 L 196.40,347.20 L 196.40,296.40 L 274.80,296.40 L 274.80,245.60 L 353.20,245.60 L 353.20,194.80 L 902.00,194.80 L 902.00,144.00 L 902.00,398.00 Z" fill="#C49A72" fill-opacity="0.08"/>
+<path id="ecdf" d="M 118.00,398.00 L 118.00,398.00 L 118.00,347.20 L 196.40,347.20 L 196.40,296.40 L 274.80,296.40 L 274.80,245.60 L 353.20,245.60 L 353.20,194.80 L 902.00,194.80 L 902.00,144.00" fill="none" stroke="#C49A72" stroke-width="3.5" stroke-linejoin="round"/>
+<circle cx="353.20" cy="194.80" r="5" fill="#171D24" stroke="#C49A72" stroke-width="2.5"/>
+<text x="119" y="132" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="24" font-weight="400" text-anchor="start">ECDF</text>
+<text x="442" y="265" fill="#F0ECE5" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="34" font-weight="600" text-anchor="start">4 / 5 at 30 ns</text>
+<text x="442" y="305" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="start">ECDF = 0.8</text>
+<text x="510" y="467" fill="#AAB5BD" font-family="ui-sans-serif, 'DejaVu Sans', sans-serif" font-size="28" font-weight="400" text-anchor="middle">Wake-up lateness (ns)</text>
+</svg>
