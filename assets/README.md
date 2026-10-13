@@ -16,7 +16,7 @@ To remove motion, change the prompt image's `src` in the root README to `./asset
 
 ## Project previews
 
-The three previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart meaning and evidence limits.
+The four previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart meaning and evidence limits.
 
 ### Linux: `projects/linux-ecdf.svg`
 
@@ -38,6 +38,10 @@ It shows pose-based fall detection, person-ROI relative depth, speech help keywo
 
 The original 900 × 560 window uses 12 px status text and several smaller painted labels. A faithful screenshot would make those details unreadable in a compact mobile preview, so the diagram is used instead. It contains no fictional UI, hardware accuracy, timing metrics, or deployment claims.
 
+### Retail: `projects/retail-segmentation.svg`
+
+An original chart based on the independently generated example in the [retail case study](https://github.com/TohruSu/retail-customer-segmentation/blob/6af50c59b9bfe9185302a52227a9f2eb09eef9ae/README.md). The example contains 720 synthetic observations (seed 2026); the documented silhouettes for k=2–5 are 0.178, 0.154, 0.147, and 0.137, respectively. The bars use the same 0–0.2 comparison scale and illustrate weak separation; they are not real survey results. The pinned values and source commit are recorded in `projects/data/sources.json`.
+
 ## Regeneration
 
 From the profile repository root:
@@ -47,6 +51,6 @@ python3 assets/projects/generate.py
 git diff --check
 ```
 
-The deterministic generator uses only Python's standard library and the retained local inputs. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the three project repositories. Running it twice produces byte-identical SVGs.
+The deterministic generator uses only Python's standard library, the retained local inputs, and the pinned retail reference values. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the three project repositories. Running it twice produces byte-identical SVGs.
 
-`projects/data/sources.json` records the reviewed upstream commits and source SHA-256 hashes. The retained fixture and extracted geometry hashes are checked during regeneration. To refresh a preview, inspect the new upstream evidence, update the retained source data and provenance together, then regenerate and review the result. Architecture labels and connections are defined directly in the generator.
+`projects/data/sources.json` records the reviewed upstream commits and source SHA-256 hashes. The retained fixture and extracted geometry hashes are checked during regeneration. The retail preview uses documented rounded scores; update them only after checking the source analytical report. To refresh a preview, inspect the new upstream evidence, update the retained source data and provenance together, then regenerate and review the result. Architecture labels and connections are defined directly in the generator.
