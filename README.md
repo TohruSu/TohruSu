@@ -49,6 +49,18 @@ A standalone C# toolkit for reproducible path-tracking simulations and controlle
 
 [View the v0.1.0 release](https://github.com/TohruSu/autonomous-tractor-navigation-sim/releases/tag/v0.1.0)
 
+### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
+
+**Python · Jetson Nano · Depth Anything V2 · Multiprocessing · PyQt5**
+
+A university team prototype combining pose-based fall detection, speech help keywords, and relative depth to provide contextual emergency alerts.
+
+- **My contribution:** Depth Anything V2 integration, person-ROI depth processing, relative-depth classification, and pose-to-depth data handoff.
+- **System:** Multiprocessing sensor/inference workers, event-fusion state machine, and PyQt5 monitoring interface.
+- **Validation:** 132 software tests, a five-worker synthetic smoke test, offscreen GUI checks, and GitHub Actions CI; real-hardware accuracy and performance remain unverified.
+
+[Explore the project](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
+
 ## Technical Skills
 
 | Category          | Technologies                          |
