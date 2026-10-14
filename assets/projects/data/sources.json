@@ -34,5 +34,20 @@
       "assets/synthetic_diagnostics.svg",
       "docs/SYNTHETIC_DATA.md"
     ]
+  },
+  "roomshelf": {
+    "commit": "746765244d7492da7a9f6073cf95191398111483",
+    "sources": {
+      "README.md": "be043002486e2dc3018b1658b1950333c8d82aef0cb6ef827d9a773e6091844a",
+      "docs/ARCHITECTURE.md": "259bb85208cc8dd37545baf6c1f643fea0168e8c372fd58bfb47994ac9163678",
+      "docs/API.md": "663ebbf0d9aaf8141e09d4ea3833ecdabaf988a8f23bcbb083b125bddb2336c5",
+      "docs/OPERATIONS.md": "c3ec1eb13ef998c46242637137f970541c07fa90151dad41e3d6cdbfcbcaccef",
+      "frontend/src/state/CompareProvider.tsx": "48617ce89d0620143307614ee22c716300bb44baa26157d0f62c2e796258a456",
+      "frontend/src/pages/ComparePage.tsx": "8de0e528cb4a8ca4d424f0ecee64c6242e8f41f7a40dd0bab3a92b3eb14d37bb",
+      "backend/roomshelf/catalog.py": "ffebbd56ba9cf947a59ecdb1ea26099466c1e98d3de5999198e823fd15e10ebd",
+      "backend/roomshelf/shortlist.py": "e6acc154818d222f1d5cad7240e317b9830aec5b92c2aafa0751cdf1a00f4112",
+      "backend/roomshelf/models.py": "7371307c26dd6eb48bc7b3f9614aaa6c5b6a43370fc8aaad19ffff5c29521554",
+      "backend/roomshelf/security.py": "947712b3b3d5a251008d41ca7dc4752927ddfb1350f1a676ac52313d99ee820d"
+    }
   }
 }

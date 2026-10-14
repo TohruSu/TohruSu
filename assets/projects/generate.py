@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild four profile previews offline using only Python's standard library."""
+"""Rebuild five profile previews offline using only Python's standard library."""
 
 import csv
 import hashlib
@@ -201,29 +201,96 @@ def retail_preview(sources):
     if any(not 0 <= float(value) <= 0.2 for value in values.values()):
         raise ValueError("Review changes to the preview scale before regenerating.")
 
-    svg = frame(
-        "Retail segmentation",
-        f'{reference["n_rows"]} records · seed {reference["seed"]} · PCA + KMeans',
-        "SYNTHETIC",
-        "Silhouette scores on independent synthetic retail data. Weak separation "
-        "across all candidates; k=2 through k=5.",
-    )
+    # Preserve the original retail SVG's metadata and serialization exactly.
+    def retail_text(x, y, value, size=28, color=TEXT, weight=None, anchor=None):
+        attributes = f' font-weight="{weight}"' if weight is not None else ""
+        if anchor is not None:
+            attributes += f' text-anchor="{anchor}"'
+        return (
+            f'<text x="{x}" y="{y}" fill="{color}" '
+            f'font-family="ui-sans-serif, DejaVu Sans, sans-serif" '
+            f'font-size="{size}"{attributes}>{escape(str(value))}</text>'
+        )
+
+    svg = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" '
+        'viewBox="0 0 960 480" role="img" aria-labelledby="title desc">',
+        '<title id="title">Retail segmentation diagnostics</title>',
+        f'<desc id="desc">Silhouette scores for k two through five on {reference["n_rows"]} '
+        'independently generated synthetic retail records: '
+        + ", ".join(f'{float(values[k]):.3f}' for k in ("2", "3", "4"))
+        + f', and {float(values["5"]):.3f}'
+        + '. All scores indicate weak separation.</desc>',
+        f'<rect x="1" y="1" width="958" height="478" rx="16" fill="{BG}" stroke="{SURFACE}"/>',
+        retail_text(36, 51, "Retail segmentation", 34, weight=700),
+        retail_text(924, 49, "SYNTHETIC", 24, COPPER, 600, "end"),
+        retail_text(38, 85, f'{reference["n_rows"]} records · seed {reference["seed"]} · PCA + KMeans', 24, MUTED),
+        f'<line x1="36" y1="104" x2="924" y2="104" stroke="{SURFACE}" stroke-width="1.5"/>',
+    ]
     svg += [
-        text(66, 149, "Candidate clusters", 25, MUTED),
-        text(410, 149, "Silhouette score", 25, MUTED),
+        retail_text(66, 149, "Candidate clusters", 25, MUTED),
+        retail_text(410, 149, "Silhouette score", 25, MUTED),
     ]
     for index, k in enumerate(("2", "3", "4", "5")):
         value = float(values[k])
         y = 196 + 61 * index
         width = round(value / 0.2 * 370)
         svg += [
-            text(90, y + 27, f"k={k}", 28),
+            retail_text(90, y + 27, f"k={k}", 28),
             f'<rect x="410" y="{y}" width="370" height="31" rx="4" fill="{SURFACE}"/>',
             f'<rect x="410" y="{y}" width="{width}" height="31" rx="4" fill="{COPPER if index == 0 else STEEL}"/>',
-            text(815, y + 27, f"{value:.3f}", 28),
+            retail_text(815, y + 27, f"{value:.3f}", 28),
         ]
-    svg.append(text(38, 465, "Weak separation across candidate partitions · illustrative data", 24, MUTED))
+    svg.append(retail_text(38, 465, "Weak separation across candidate partitions · illustrative data", 24, MUTED))
     write("retail-segmentation.svg", svg)
+
+
+def roomshelf_preview():
+    svg = frame(
+        "RoomShelf application flow",
+        "React catalog · Flask API · SQLite persistence",
+        "ARCHITECTURE",
+        "React keeps catalog search, filters, sorting, and pagination in the URL, "
+        "and comparison selections for up to three products in browser memory. "
+        "Flask serves catalog reads and shortlist writes, with signed sessions and "
+        "CSRF and Origin checks for mutations. SQLite stores products, anonymous "
+        "sessions, and shortlist items. Architecture illustration, not an application screenshot.",
+    )
+    svg += [
+        '<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" '
+        'markerWidth="5" markerHeight="5" orient="auto-start-reverse">',
+        f'<path d="M 0 0 L 10 5 L 0 10 Z" fill="{COPPER}"/></marker></defs>',
+        f'<path d="M 320 236 H 374" fill="none" stroke="{COPPER}" '
+        'stroke-width="2.5" marker-end="url(#arrow)"/>',
+        f'<path d="M 620 236 H 680" fill="none" stroke="{COPPER}" '
+        'stroke-width="2.5" marker-end="url(#arrow)"/>',
+    ]
+    for x, width in ((40, 280), (374, 246), (680, 242)):
+        svg.append(
+            f'<rect x="{x}" y="140" width="{width}" height="246" rx="12" '
+            f'fill="{SURFACE}" stroke="{COPPER if x == 374 else STEEL}" stroke-width="1.5"/>'
+        )
+    svg += [
+        text(180, 182, "React catalog", 28, weight=600, anchor="middle"),
+        text(180, 220, "Search + filters", 24, MUTED, anchor="middle"),
+        text(180, 252, "Sort + page in URL", 24, MUTED, anchor="middle"),
+        line(60, 273, 300, 273, STEEL),
+        text(180, 310, "Compare up to 3", 26, weight=600, anchor="middle"),
+        text(180, 345, "Browser memory", 24, MUTED, anchor="middle"),
+        text(497, 182, "Flask API", 28, weight=600, anchor="middle"),
+        text(497, 220, "Catalog reads", 24, MUTED, anchor="middle"),
+        text(497, 252, "Shortlist writes", 24, MUTED, anchor="middle"),
+        line(394, 273, 600, 273, STEEL),
+        text(497, 310, "Signed sessions", 24, MUTED, anchor="middle"),
+        text(497, 345, "CSRF + Origin", 24, MUTED, anchor="middle"),
+        text(801, 182, "SQLite", 28, weight=600, anchor="middle"),
+        text(801, 226, "Products", 26, MUTED, anchor="middle"),
+        text(801, 270, "Anonymous sessions", 22, MUTED, anchor="middle"),
+        text(801, 314, "Shortlist items", 26, MUTED, anchor="middle"),
+        text(40, 430, "Comparison selection stays in browser memory.", 26, MUTED),
+        text(40, 465, "Anonymous shortlists persist in SQLite.", 26, MUTED),
+    ]
+    write("roomshelf-overview.svg", svg)
 
 
 def main():
@@ -232,7 +299,8 @@ def main():
     navigation_preview(sources)
     architecture_preview()
     retail_preview(sources)
-    print("Regenerated four 960 × 480 previews from local pinned sources; no external packages or network needed.")
+    roomshelf_preview()
+    print("Regenerated five 960 × 480 previews from local pinned sources; no external packages or network needed.")
 
 
 if __name__ == "__main__":

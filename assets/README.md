@@ -16,7 +16,7 @@ To remove motion, change the prompt image's `src` in the root README to `./asset
 
 ## Project previews
 
-The four previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart meaning and evidence limits.
+The five previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart or diagram meaning and evidence limits.
 
 ### Linux: `projects/linux-ecdf.svg`
 
@@ -42,6 +42,14 @@ The original 900 × 560 window uses 12 px status text and several smaller painte
 
 An original chart based on the independently generated example in the [retail case study](https://github.com/TohruSu/retail-customer-segmentation/blob/6af50c59b9bfe9185302a52227a9f2eb09eef9ae/README.md). The example contains 720 synthetic observations (seed 2026); the documented silhouettes for k=2–5 are 0.178, 0.154, 0.147, and 0.137, respectively. The bars use the same 0–0.2 comparison scale and illustrate weak separation; they are not real survey results. The pinned values and source commit are recorded in `projects/data/sources.json`.
 
+### RoomShelf: `projects/roomshelf-overview.svg`
+
+An architecture illustration of the implemented React → Flask → SQLite flow, based on RoomShelf's [README](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/README.md), [architecture](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/docs/ARCHITECTURE.md), [API](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/docs/API.md), and [operations](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/docs/OPERATIONS.md) at the same reviewed commit.
+
+React keeps applied search, filters, sorting, and pagination in the URL. Comparison selections stay in browser memory, with a limit of three products; `frontend/src/state/CompareProvider.tsx` and `frontend/src/pages/ComparePage.tsx` confirm that the table loads ordinary product details without a dedicated comparison API. Flask serves catalog reads and transactional shortlist writes. `backend/roomshelf/catalog.py`, `shortlist.py`, `models.py`, and `security.py` confirm SQLite-backed products, anonymous sessions, and memberships, with signed sessions and CSRF/Origin validation for shortlist mutations. Source SHA-256 hashes are recorded in `projects/data/sources.json`.
+
+The preview summarizes application responsibilities, not a deployed topology or an application screenshot. RoomShelf's actual [browser captures](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/docs/screenshots/README.md) show a fictional furniture catalog with local illustrations. Diagram labels and connections are defined in the standard-library generator and regenerate offline using the command below.
+
 ## Regeneration
 
 From the profile repository root:
@@ -51,6 +59,6 @@ python3 assets/projects/generate.py
 git diff --check
 ```
 
-The deterministic generator uses only Python's standard library, the retained local inputs, and the pinned retail reference values. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the three project repositories. Running it twice produces byte-identical SVGs.
+The deterministic generator uses only Python's standard library, the retained local inputs, the pinned retail reference values, and the documented architecture labels. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the linked project repositories. Running it twice produces byte-identical SVGs, preserving all four original previews.
 
 `projects/data/sources.json` records the reviewed upstream commits and source SHA-256 hashes. The retained fixture and extracted geometry hashes are checked during regeneration. The retail preview uses documented rounded scores; update them only after checking the source analytical report. To refresh a preview, inspect the new upstream evidence, update the retained source data and provenance together, then regenerate and review the result. Architecture labels and connections are defined directly in the generator.
