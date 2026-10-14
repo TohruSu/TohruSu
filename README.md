@@ -28,7 +28,7 @@ I'm spending more time with **backend systems, Linux, and performance measuremen
 
 ## Featured projects
 
-A few projects I've worked on, from low-level measurements to applications of machine learning and data analysis.
+A few projects I've worked on, from low-level measurements to full-stack applications, machine learning, and data analysis.
 
 ### [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)
 
@@ -85,6 +85,20 @@ From exploring shopping behavior to designing **「今日の食えらび編集�
 - **Verification:** 72 automated tests, eight executable notebooks, reproducible outputs, and Python 3.11–3.13 CI.
 
 **[Explore the repository](https://github.com/TohruSu/retail-customer-segmentation)**
+
+### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
+
+*React 19 · TypeScript · Flask · SQLite · Playwright*
+
+A full-stack furniture catalog for exploring products, comparing specifications, and saving favorites without an account.
+
+<img src="./assets/projects/roomshelf-overview.svg" width="640" alt="RoomShelf architecture: React catalog with URL-driven search and filters and in-memory comparison of up to three products; Flask API with session, CSRF, and Origin checks for shortlist writes; SQLite products, anonymous sessions, and saved items.">
+
+- **Core implementation:** URL-driven catalog queries, product comparison, transactional SQLite shortlists, and signed sessions with CSRF/Origin checks.
+- **My work:** Project scoping and technical design, AI-assisted development, implementation review, testing, and documentation.
+- **Verification:** 393 backend tests, 223 frontend tests, 40 Chromium browser tests, and GitHub Actions.
+
+**[Explore the repository](https://github.com/TohruSu/roomshelf-catalog-explorer)**
 
 ## Tools I use
 
