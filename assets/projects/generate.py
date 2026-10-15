@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild five profile previews offline using only Python's standard library."""
+"""Rebuild six profile previews offline using only Python's standard library."""
 
 import csv
 import hashlib
@@ -293,6 +293,43 @@ def roomshelf_preview():
     write("roomshelf-overview.svg", svg)
 
 
+def adaptivequeue_preview(sources):
+    """Render the implemented Q-Learning scheduling flow."""
+    if sources["adaptivequeue"]["commit"] != "1bbfc3641c1257faaa4361f9943c5ed2d18b27de":
+        raise ValueError("Review the AdaptiveQueue reference before changing its pinned commit.")
+    svg = frame(
+        "AdaptiveQueue scheduling flow",
+        "Discrete-time jobs · tabular Q-Learning",
+        "SIMULATION",
+        "Synthetic ready jobs are summarized into a queue state. Tabular Q-Learning selects FIFO, SPT, EDF, or Priority; the selected rule picks one job for a non-preemptive worker. Completion cost supplies a learning reward.",
+    )
+    svg += [
+        '<defs><marker id="aq-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">',
+        f'<path d="M 0 0 L 10 5 L 0 10 Z" fill="{COPPER}"/></marker></defs>',
+        f'<path d="M 300 265 H 354" fill="none" stroke="{COPPER}" stroke-width="2.5" marker-end="url(#aq-arrow)"/>',
+        f'<path d="M 626 265 H 680" fill="none" stroke="{COPPER}" stroke-width="2.5" marker-end="url(#aq-arrow)"/>',
+        f'<rect x="40" y="145" width="260" height="238" rx="12" fill="{SURFACE}" stroke="{STEEL}" stroke-width="1.5"/>',
+        f'<rect x="356" y="145" width="270" height="238" rx="12" fill="{SURFACE}" stroke="{COPPER}" stroke-width="1.5"/>',
+        f'<rect x="680" y="145" width="242" height="238" rx="12" fill="{SURFACE}" stroke="{STEEL}" stroke-width="1.5"/>',
+        text(170, 188, "Ready job queue", 28, weight=600, anchor="middle"),
+        text(170, 232, "Arrival + deadlines", 23, MUTED, anchor="middle"),
+        text(170, 270, "Duration + priority", 23, MUTED, anchor="middle"),
+        text(170, 338, "State features", 26, weight=600, anchor="middle"),
+        text(491, 188, "Q-Learning", 28, weight=600, anchor="middle"),
+        text(491, 232, "Choose a rule", 23, MUTED, anchor="middle"),
+        text(491, 274, "FIFO · SPT", 25, weight=600, anchor="middle"),
+        text(491, 308, "EDF · Priority", 25, weight=600, anchor="middle"),
+        text(491, 350, "96 state buckets", 23, MUTED, anchor="middle"),
+        text(801, 188, "Single worker", 28, weight=600, anchor="middle"),
+        text(801, 232, "Non-preemptive", 23, MUTED, anchor="middle"),
+        text(801, 270, "Finish one job", 23, MUTED, anchor="middle"),
+        text(801, 338, "Cost → reward", 24, weight=600, anchor="middle"),
+        text(40, 432, "State-dependent selection of classical scheduling rules.", 25, MUTED),
+        text(40, 469, "Benchmarked on Stable, Bursty, and Mixed synthetic workloads.", 24, MUTED),
+    ]
+    write("adaptivequeue-flow.svg", svg)
+
+
 def main():
     sources = json.loads((DATA / "sources.json").read_text())
     latency_preview(sources)
@@ -300,7 +337,8 @@ def main():
     architecture_preview()
     retail_preview(sources)
     roomshelf_preview()
-    print("Regenerated five 960 × 480 previews from local pinned sources; no external packages or network needed.")
+    adaptivequeue_preview(sources)
+    print("Regenerated six 960 × 480 previews from local pinned sources; no external packages or network needed.")
 
 
 if __name__ == "__main__":

@@ -49,5 +49,14 @@
       "backend/roomshelf/models.py": "7371307c26dd6eb48bc7b3f9614aaa6c5b6a43370fc8aaad19ffff5c29521554",
       "backend/roomshelf/security.py": "947712b3b3d5a251008d41ca7dc4752927ddfb1350f1a676ac52313d99ee820d"
     }
+  },
+  "adaptivequeue": {
+    "commit": "1bbfc3641c1257faaa4361f9943c5ed2d18b27de",
+    "source_paths": [
+      "README.md",
+      "docs/simulation.md",
+      "docs/experiments.md",
+      "benchmarks/default/summary.csv"
+    ]
   }
 }

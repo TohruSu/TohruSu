@@ -16,7 +16,7 @@ To remove motion, change the prompt image's `src` in the root README to `./asset
 
 ## Project previews
 
-The five previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart or diagram meaning and evidence limits.
+The six previews in `projects/` share a 960 × 480 canvas, graphite surface, ivory typography, copper accents, and slate borders. The root README displays each at a maximum width of 640 px, scaling down for mobile. Informative alt text supplies the chart or diagram meaning and evidence limits.
 
 ### Linux: `projects/linux-ecdf.svg`
 
@@ -50,6 +50,10 @@ React keeps applied search, filters, sorting, and pagination in the URL. Compari
 
 The preview summarizes application responsibilities, not a deployed topology or an application screenshot. RoomShelf's actual [browser captures](https://github.com/TohruSu/roomshelf-catalog-explorer/blob/746765244d7492da7a9f6073cf95191398111483/docs/screenshots/README.md) show a fictional furniture catalog with local illustrations. Diagram labels and connections are defined in the standard-library generator and regenerate offline using the command below.
 
+### AdaptiveQueue: `projects/adaptivequeue-flow.svg`
+
+A decision-flow illustration of the tabular Q-Learning meta-scheduler, based on [AdaptiveQueue's README](https://github.com/TohruSu/adaptivequeue/blob/1bbfc3641c1257faaa4361f9943c5ed2d18b27de/README.md), [simulation design](https://github.com/TohruSu/adaptivequeue/blob/1bbfc3641c1257faaa4361f9943c5ed2d18b27de/docs/simulation.md), and [recorded experiments](https://github.com/TohruSu/adaptivequeue/blob/1bbfc3641c1257faaa4361f9943c5ed2d18b27de/docs/experiments.md). It shows the observed job queue, one of four selectable heuristic policies, and a non-preemptive worker. The stored benchmark evaluates three independently trained models against five baselines on Stable, Bursty, and Mixed workloads. This overview is a diagram of the simulation, not a live scheduler.
+
 ## Regeneration
 
 From the profile repository root:
@@ -59,6 +63,6 @@ python3 assets/projects/generate.py
 git diff --check
 ```
 
-The deterministic generator uses only Python's standard library, the retained local inputs, the pinned retail reference values, and the documented architecture labels. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the linked project repositories. Running it twice produces byte-identical SVGs, preserving all four original previews.
+The deterministic generator uses only Python's standard library, the retained local inputs, the pinned retail reference values, and the documented architecture labels. It needs no network access, plotting packages, Qt, .NET, model weights, or changes to the linked project repositories. Running it twice produces byte-identical SVGs, preserving all earlier previews.
 
 `projects/data/sources.json` records the reviewed upstream commits and source SHA-256 hashes. The retained fixture and extracted geometry hashes are checked during regeneration. The retail preview uses documented rounded scores; update them only after checking the source analytical report. To refresh a preview, inspect the new upstream evidence, update the retained source data and provenance together, then regenerate and review the result. Architecture labels and connections are defined directly in the generator.
