@@ -9,7 +9,7 @@ I'm studying for a master's in **Information, Production and Systems at Waseda U
 
 I like working on software from both ends: building something useful, then figuring out what happens under the hood. That has taken me from web development to Linux timing experiments, computer vision, robotics, and data analysis. I'm particularly interested in backend engineering, system behavior, and writing code that's easy to test and understand.
 
-[Projects](#featured-projects) · [Experience](#experience) · [Tools](#tools-i-use) · [A-little-more-about-me](#outside-of-code)
+[Projects](#featured-projects) · [Experience](#experience) · [Tools](#tools-i-use) · [Outside of code](#outside-of-code)
 
 ## What I'm learning
 
@@ -99,6 +99,20 @@ A full-stack furniture catalog for exploring products, comparing specifications,
 - **Verification:** 393 backend tests, 223 frontend tests, 40 Chromium browser tests, and GitHub Actions.
 
 **[Explore the repository](https://github.com/TohruSu/roomshelf-catalog-explorer)**
+
+### [AdaptiveQueue — RL Job Scheduling](https://github.com/TohruSu/adaptivequeue)
+
+*Python · Tabular Q-Learning · Scheduling Algorithms · pytest · GitHub Actions*
+
+A scheduling simulator that explores when learned policy selection can improve on fixed rules under changing job workloads.
+
+<img src="./assets/projects/adaptivequeue-flow.svg" width="640" alt="AdaptiveQueue scheduling flow: synthetic jobs enter a ready queue; tabular Q-Learning selects FIFO, SPT, EDF, or Priority; one worker runs the selected job non-preemptively and returns a cost-based learning reward.">
+
+- **Core implementation:** Discrete-time task simulation, four deterministic scheduling baselines, and a tabular Q-Learning meta-scheduler.
+- **My work:** Scheduling and reward design, AI-assisted implementation review, and reproducible benchmark analysis.
+- **Verification:** 81 automated tests, Python 3.10/3.12 CI, and 720 seeded evaluation records across three workload scenarios.
+
+**[Explore the repository](https://github.com/TohruSu/adaptivequeue)**
 
 ## Tools I use
 
