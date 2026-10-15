@@ -36,13 +36,9 @@ A few projects I've worked on, from low-level measurements to full-stack applica
 
 A Linux toolkit for measuring application-observed wake-up lateness and analyzing the resulting CSV data.
 
-<img src="./assets/projects/linux-ecdf.svg" width="640" alt="Synthetic ECDF for fixture latencies 0, 10, 20, 30, and 100 ns: four of five observations are at or below 30 ns. Not hardware measurements.">
-
 - **Core implementation:** Absolute monotonic scheduling, checked timestamp arithmetic, and skipped-period accounting.
 - **My work:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and visualizations.
 - **Verification:** C/Python tests, ASan/UBSan, and GCC/Clang GitHub Actions.
-
-**[View the v0.1.0 release](https://github.com/TohruSu/linux-wakeup-latency-benchmark/releases/tag/v0.1.0)**
 
 ### [Autonomous Tractor Navigation Simulation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)
 
@@ -50,13 +46,9 @@ A Linux toolkit for measuring application-observed wake-up lateness and analyzin
 
 A standalone toolkit for reproducible path tracking and controller evaluation on synthetic routes.
 
-<img src="./assets/projects/navigation-tracking.svg" width="640" alt="Synthetic 6 m left-turn simulation from a +0.5 m initial offset: original reference, Stanley, and Pure Pursuit paths, with RMS cross-track errors of 0.236 m and 0.170 m respectively. Not field data.">
-
 - **Core implementation:** Stanley and Pure Pursuit controllers, deterministic bicycle-model simulation, and steering constraints.
 - **My work:** Seven synthetic scenarios, CSV evaluation metrics, and trajectory comparisons across four controller configurations.
 - **Verification:** 61 automated tests, repeatable CSV/SVG outputs, and GitHub Actions.
-
-**[View the v0.1.0 release](https://github.com/TohruSu/autonomous-tractor-navigation-sim/releases/tag/v0.1.0)**
 
 ### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
 
@@ -64,13 +56,9 @@ A standalone toolkit for reproducible path tracking and controller evaluation on
 
 A university team prototype combining pose-based fall detection, speech help keywords, and relative depth for contextual alerts.
 
-<img src="./assets/projects/jetson-architecture.svg" width="640" alt="Architecture illustration of pose and fall detection, relative depth, speech events, event fusion, and a PyQt5 monitor.">
-
 - **Core implementation:** Sensor and inference workers, event-fusion logic, and a PyQt5 monitoring interface.
 - **My work:** Depth Anything V2 integration, person ROI processing, and pose-to-depth handoff.
 - **Verification:** 132 automated tests, a synthetic five-worker smoke test, and GitHub Actions.
-
-**[View the v0.1.0 release](https://github.com/TohruSu/jetson-multimodal-emergency-detection/releases/tag/v0.1.0)**
 
 ### [Retail Customer Segmentation & Strategy](https://github.com/TohruSu/retail-customer-segmentation)
 
@@ -78,13 +66,9 @@ A university team prototype combining pose-based fall detection, speech help key
 
 From exploring shopping behavior to designing **「今日の食えらび編集室」**, a meal-choice experience for food retail.
 
-<img src="./assets/projects/retail-segmentation.svg" width="640" alt="Four-bar chart of silhouette scores on independent synthetic retail data: k=2 0.178, k=3 0.154, k=4 0.147, and k=5 0.137. Weak separation.">
-
 - **Core implementation:** Synthetic data generation, preprocessing, PCA/KMeans diagnostics, and an eight-stage analysis workflow.
 - **My work:** Customer analysis, interpretation, and the original meal-choice retail strategy concept.
 - **Verification:** 72 automated tests, eight executable notebooks, reproducible outputs, and Python 3.11–3.13 CI.
-
-**[Explore the repository](https://github.com/TohruSu/retail-customer-segmentation)**
 
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
 
@@ -92,13 +76,9 @@ From exploring shopping behavior to designing **「今日の食えらび編集�
 
 A full-stack furniture catalog for exploring products, comparing specifications, and saving favorites without an account.
 
-<img src="./assets/projects/roomshelf-overview.svg" width="640" alt="RoomShelf architecture: React catalog with URL-driven search and filters and in-memory comparison of up to three products; Flask API with session, CSRF, and Origin checks for shortlist writes; SQLite products, anonymous sessions, and saved items.">
-
 - **Core implementation:** URL-driven catalog queries, product comparison, transactional SQLite shortlists, and signed sessions with CSRF/Origin checks.
 - **My work:** Project scoping and technical design, AI-assisted development, implementation review, testing, and documentation.
 - **Verification:** 393 backend tests, 223 frontend tests, 40 Chromium browser tests, and GitHub Actions.
-
-**[Explore the repository](https://github.com/TohruSu/roomshelf-catalog-explorer)**
 
 ### [AdaptiveQueue — RL Job Scheduling](https://github.com/TohruSu/adaptivequeue)
 
@@ -106,13 +86,9 @@ A full-stack furniture catalog for exploring products, comparing specifications,
 
 A scheduling simulator that explores when learned policy selection can improve on fixed rules under changing job workloads.
 
-<img src="./assets/projects/adaptivequeue-flow.svg" width="640" alt="AdaptiveQueue scheduling flow: synthetic jobs enter a ready queue; tabular Q-Learning selects FIFO, SPT, EDF, or Priority; one worker runs the selected job non-preemptively and returns a cost-based learning reward.">
-
 - **Core implementation:** Discrete-time task simulation, four deterministic scheduling baselines, and a tabular Q-Learning meta-scheduler.
 - **My work:** Scheduling and reward design, AI-assisted implementation review, and reproducible benchmark analysis.
 - **Verification:** 81 automated tests, Python 3.10/3.12 CI, and 720 seeded evaluation records across three workload scenarios.
-
-**[Explore the repository](https://github.com/TohruSu/adaptivequeue)**
 
 ## Tools I use
 
@@ -138,6 +114,6 @@ Reinforcement learning · Path-tracking simulation
 
 ## Outside of code
 
-I play the piano, enjoy badminton, and occasionally spend far too much time editing music or videos. I speak Chinese, Japanese, and English.
+I play the piano, enjoy badminton, and occasionally spend far too much time editing music videos. I speak Chinese, Japanese, and English.
 
-Thanks for visiting. If something here catches your eye, feel free to explore the code.
+Thanks for visiting. If something here catches your eye, feel free to explore the code!
