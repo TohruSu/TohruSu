@@ -51,7 +51,7 @@ A Linux toolkit for measuring application-observed wake-up lateness and analyzin
 A small, read-only CLI that flags potentially non-portable Git-tracked paths, including case/Unicode collisions and Windows-incompatible names.
 
 - **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
-- **My work:** Scope and acceptance criteria, AI-assisted development and independent review coordination, focused regression verification, and release validation.
+- **My work:** MVP scoping and acceptance criteria, implementation review, regression testing, and release validation.
 - **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14, and a published [v0.1.0 release](https://github.com/TohruSu/RepoPort/releases/tag/v0.1.0).
 
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
@@ -61,7 +61,7 @@ A small, read-only CLI that flags potentially non-portable Git-tracked paths, in
 A full-stack furniture catalog for exploring products, comparing specifications, and saving favorites without an account.
 
 - **Core implementation:** URL-driven catalog queries, product comparison, transactional SQLite shortlists, and signed sessions with CSRF/Origin checks.
-- **My work:** Project scoping and technical design, AI-assisted development, implementation review, testing, and documentation.
+- **My work:** Project scoping, technical design, feature development and review, testing, and documentation.
 - **Verification:** 393 backend tests, 223 frontend tests, 40 Chromium browser tests, and GitHub Actions.
 
 ### [AdaptiveQueue — RL Job Scheduling](https://github.com/TohruSu/adaptivequeue)
@@ -71,7 +71,7 @@ A full-stack furniture catalog for exploring products, comparing specifications,
 A scheduling simulator that explores when learned policy selection can improve on fixed rules under changing job workloads.
 
 - **Core implementation:** Discrete-time task simulation, four deterministic scheduling baselines, and a tabular Q-Learning meta-scheduler.
-- **My work:** Scheduling and reward design, AI-assisted implementation review, and reproducible benchmark analysis.
+- **My work:** Scheduling and reward design, implementation review, and reproducible benchmark analysis.
 - **Verification:** 81 automated tests, Python 3.10/3.12 CI, and 720 seeded evaluation records across three workload scenarios.
 
 ### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
