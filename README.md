@@ -9,7 +9,7 @@ I'm a master's student at **Waseda University** (Graduate School of Information,
 
 I build and evaluate software across **Linux systems, backend engineering, and applied AI**. I care about reliable implementations, reproducible experiments, and tests that reveal both system behavior and its limitations. I'm currently learning **digital hardware design and verification** as I explore research-oriented engineering.
 
-**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
+**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [RepoPort](https://github.com/TohruSu/RepoPort) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
@@ -32,7 +32,7 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Featured projects
 
-My portfolio focuses on **systems programming, full-stack engineering, and reproducible algorithm experiments**, with additional work in computer vision, robotics simulation, and data analysis.
+My portfolio focuses on **systems programming, developer tooling, full-stack engineering, and reproducible algorithm experiments**, with additional work in computer vision, robotics simulation, and data analysis.
 
 ### [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)
 
@@ -43,6 +43,16 @@ A Linux toolkit for measuring application-observed wake-up lateness and analyzin
 - **Core implementation:** Absolute monotonic scheduling, checked timestamp arithmetic, and skipped-period accounting.
 - **My work:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and visualizations.
 - **Verification:** C/Python tests, ASan/UBSan, and GCC/Clang GitHub Actions.
+
+### [RepoPort — Git Filename Portability Checker](https://github.com/TohruSu/RepoPort)
+
+*Python 3.11+ · Git · Unicode · GitHub Actions*
+
+A small, read-only CLI that flags potentially non-portable Git-tracked paths, including case/Unicode collisions and Windows-incompatible names.
+
+- **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
+- **My work:** Scope and acceptance criteria, AI-assisted development and independent review coordination, focused regression verification, and release validation.
+- **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14, and a published [v0.1.0 release](https://github.com/TohruSu/RepoPort/releases/tag/v0.1.0).
 
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
 
