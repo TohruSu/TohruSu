@@ -1,6 +1,8 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg">
-  <img src="./assets/hero.svg" width="960" alt="Tohru — software, systems, and applied AI. A graphite engineering panel with an abstract signal trace.">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-mobile.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero.png">
+  <source media="(max-width: 600px)" srcset="./assets/hero-mobile.gif">
+  <img src="./assets/hero.gif" width="960" alt="Tohru — Software Engineering / Hardware Verification. Waseda University · Kimura Lab. Focus: digital design, verification, optimization.">
 </picture>
 
 # Hi, I'm Tohru.
