@@ -84,6 +84,16 @@ A browser-based tool for comparing original and translated subtitle tracks by ti
 - **My work:** MVP scoping, implementation review, randomized correctness verification, browser testing, and release validation.
 - **Verification:** 45 automated tests, independent randomized grouping checks, passing CI, and GitHub Pages deployment. [v0.1.0 release](https://github.com/TohruSu/CuePair/releases/tag/v0.1.0).
 
+### [RunMatrix — JUnit Test Run Comparator](https://github.com/TohruSu/RunMatrix)
+
+*React · TypeScript · Vite · Vitest · GitHub Actions*
+
+A browser-based tool for comparing JUnit XML test reports across runs, with a visual status matrix and failure inspection. [Try the live demo](https://tohrusu.github.io/RunMatrix/).
+
+- **Core implementation:** XML report validation, stable test identity matching, outcome classification, report reordering, and interactive matrix navigation.
+- **My work:** MVP scoping, correctness review, independent comparison checks, browser acceptance, and release preparation.
+- **Verification:** 77 automated tests, independent classification checks, passing CI, and GitHub Pages deployment.
+
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
 
 *React 19 · TypeScript · Flask · SQLite · Playwright*
