@@ -11,7 +11,7 @@ I'm a master's student at Graduate School of Information, Production and Systems
 
 I build and evaluate software across **Linux systems, backend engineering, and applied AI**. I care about reliable implementations, reproducible experiments, and tests that reveal both system behavior and its limitations. I'm currently learning **digital hardware design and verification** as I explore research-oriented engineering.
 
-**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [PathReplay](https://github.com/TohruSu/PathReplay) · [RepoPort](https://github.com/TohruSu/RepoPort) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
+**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [PathReplay](https://github.com/TohruSu/PathReplay) · [RepoPort](https://github.com/TohruSu/RepoPort) · [PyPathDoctor](https://github.com/TohruSu/PyPathDoctor) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
@@ -53,6 +53,16 @@ A small, read-only CLI that flags potentially non-portable Git-tracked paths, in
 - **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
 - **My work:** MVP scoping and acceptance criteria, implementation review, regression testing, and release validation.
 - **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14.
+
+### [PyPathDoctor — Windows Python Command Diagnostics](https://github.com/TohruSu/PyPathDoctor)
+
+*PowerShell 5.1 / 7 · Windows · GitHub Actions*
+
+A lightweight PowerShell CLI that shows which Python-related commands your Windows terminal finds and how PATH affects their resolution.
+
+- **Core implementation:** PowerShell command discovery, PATH precedence reporting, virtual-environment and WindowsApps checks, and practical diagnostic suggestions.
+- **My work:** MVP scoping, diagnostic review, targeted regression fixes, and release verification.
+- **Verification:** 29 automated tests, passing Windows PowerShell 5.1 / PowerShell 7 CI, and checks against a multi-installation Python environment. [v0.1.0 release](https://github.com/TohruSu/PyPathDoctor/releases/tag/v0.1.0).
 
 ### [PathReplay — 2D Trajectory CSV Viewer](https://github.com/TohruSu/PathReplay)
 
@@ -128,7 +138,7 @@ MySQL · SQLite
 
 ### <img src="./assets/systems.svg" width="20" height="20" alt=""> Systems and tooling
 
-Linux/POSIX · Git · GitHub Actions  
+Linux/POSIX · PowerShell · Git · GitHub Actions  
 Performance measurement · Automated testing · Sanitizers
 
 ### <img src="./assets/applied.svg" width="20" height="20" alt=""> Other interests
