@@ -24,12 +24,6 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Experience
 
-- **Rakuten Group · Software engineering intern** — Worked with Python/Flask and React/TypeScript on search features and the interface for a furniture discovery application.
-- **DENSO · Automotive SoC intern** — Used C and measurement tools to investigate system wake-up timing and performance issues.
-- **TokiTech · Web developer** — Worked on business applications with Java/Spring Boot, Vue.js, and databases.
-
-## Experience
-
 - **Rakuten Group · Software Engineering Intern** — Developed search features and frontend interfaces for a furniture discovery application using Python/Flask and React/TypeScript.
 - **ADK Holdings · Data Science Camp** — Analyzed consumer survey data with Python and developed a retail marketing strategy using STP, 3C, and 4P frameworks.
 - **DENSO · Automotive SoC Intern** — Investigated system wake-up latency and performance issues using C and measurement tools.
