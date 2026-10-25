@@ -74,6 +74,16 @@ A browser-based tool for comparing and replaying 2D trajectories from local CSV 
 - **My work:** MVP scoping and acceptance criteria, implementation review, regression verification, and browser-based release acceptance.
 - **Verification:** 52 automated tests, successful CI and GitHub Pages deployment, and import of 14,342 synthetic simulator samples across 28 trajectory runs.
 
+### [CuePair — Subtitle Timeline Comparator](https://github.com/TohruSu/CuePair)
+
+*React · TypeScript · Vite · Vitest · GitHub Actions*
+
+A browser-based tool for comparing original and translated subtitle tracks by timing, even when their cue counts or segmentation differ. [Try the live demo](https://tohrusu.github.io/CuePair/).
+
+- **Core implementation:** UTF-8 SRT parsing, sweep-line and union-find temporal grouping, unmatched cue and timing-overlap detection, and interactive timeline navigation.
+- **My work:** MVP scoping, implementation review, randomized correctness verification, browser testing, and release validation.
+- **Verification:** 45 automated tests, independent randomized grouping checks, passing CI, and GitHub Pages deployment. [v0.1.0 release](https://github.com/TohruSu/CuePair/releases/tag/v0.1.0).
+
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
 
 *React 19 · TypeScript · Flask · SQLite · Playwright*
