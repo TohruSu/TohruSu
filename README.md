@@ -7,15 +7,13 @@
 
 # Hi, I'm Tohru.
 
-I'm a master's student at **Waseda University** (Graduate School of Information, Production and Systems; expected graduation: March 2028), with a background in **Software Engineering at Xiamen University**.
+I'm a master's student at Graduate School of Information, Production and Systems, **Waseda University**, with a background in **Software Engineering at Xiamen University**.
 
 I build and evaluate software across **Linux systems, backend engineering, and applied AI**. I care about reliable implementations, reproducible experiments, and tests that reveal both system behavior and its limitations. I'm currently learning **digital hardware design and verification** as I explore research-oriented engineering.
 
 **Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [PathReplay](https://github.com/TohruSu/PathReplay) · [RepoPort](https://github.com/TohruSu/RepoPort) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
-
-[Projects](#featured-projects) · [Experience](#experience) · [Current focus](#current-focus) · [Tools](#tools-i-use) · [Outside of code](#outside-of-code)
 
 ## Current focus
 
@@ -54,7 +52,7 @@ A small, read-only CLI that flags potentially non-portable Git-tracked paths, in
 
 - **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
 - **My work:** MVP scoping and acceptance criteria, implementation review, regression testing, and release validation.
-- **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14, and a published [v0.1.0 release](https://github.com/TohruSu/RepoPort/releases/tag/v0.1.0).
+- **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14.
 
 ### [PathReplay — 2D Trajectory CSV Viewer](https://github.com/TohruSu/PathReplay)
 
@@ -110,7 +108,7 @@ A standalone toolkit for reproducible path tracking and controller evaluation on
 
 *Python · pandas · scikit-learn · PCA / KMeans · GitHub Actions*
 
-From exploring shopping behavior to designing **「今日の食えらび編集室」**, a meal-choice experience for food retail.
+From exploring shopping behavior to designing 「今日の食えらび編集室」, a meal-choice experience for food retail.
 
 - **Core implementation:** Synthetic data generation, preprocessing, PCA/KMeans diagnostics, and an eight-stage analysis workflow.
 - **My work:** Customer analysis, interpretation, and the original meal-choice retail strategy concept.
