@@ -11,7 +11,7 @@ I'm a master's student at **Waseda University** (Graduate School of Information,
 
 I build and evaluate software across **Linux systems, backend engineering, and applied AI**. I care about reliable implementations, reproducible experiments, and tests that reveal both system behavior and its limitations. I'm currently learning **digital hardware design and verification** as I explore research-oriented engineering.
 
-**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [RepoPort](https://github.com/TohruSu/RepoPort) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
+**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [PathReplay](https://github.com/TohruSu/PathReplay) · [RepoPort](https://github.com/TohruSu/RepoPort) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
@@ -55,6 +55,16 @@ A small, read-only CLI that flags potentially non-portable Git-tracked paths, in
 - **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
 - **My work:** MVP scoping and acceptance criteria, implementation review, regression testing, and release validation.
 - **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14, and a published [v0.1.0 release](https://github.com/TohruSu/RepoPort/releases/tag/v0.1.0).
+
+### [PathReplay — 2D Trajectory CSV Viewer](https://github.com/TohruSu/PathReplay)
+
+*React · TypeScript · Vite · SVG · Vitest · GitHub Actions*
+
+A browser-based tool for comparing and replaying 2D trajectories from local CSV files. [Try the live demo](https://tohrusu.github.io/PathReplay/).
+
+- **Core implementation:** Local CSV validation and grouping, equal-scale SVG plotting, timestamp-based interpolation, and interactive replay for one or two trajectories.
+- **My work:** MVP scoping and acceptance criteria, implementation review, regression verification, and browser-based release acceptance.
+- **Verification:** 52 automated tests, successful CI and GitHub Pages deployment, and import of 14,342 synthetic simulator samples across 28 trajectory runs.
 
 ### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
 
