@@ -82,7 +82,7 @@ A browser-based tool for comparing original and translated subtitle tracks by ti
 
 - **Core implementation:** UTF-8 SRT parsing, sweep-line and union-find temporal grouping, unmatched cue and timing-overlap detection, and interactive timeline navigation.
 - **My work:** MVP scoping, implementation review, randomized correctness verification, browser testing, and release validation.
-- **Verification:** 45 automated tests, independent randomized grouping checks, passing CI, and GitHub Pages deployment. [v0.1.0 release](https://github.com/TohruSu/CuePair/releases/tag/v0.1.0).
+- **Verification:** 45 automated tests, independent randomized grouping checks, passing CI, and GitHub Pages deployment.
 
 ### [RunMatrix — JUnit Test Run Comparator](https://github.com/TohruSu/RunMatrix)
 
