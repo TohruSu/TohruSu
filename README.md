@@ -7,11 +7,9 @@
 
 # Hi, I'm Tohru.
 
-I'm a master's student at Graduate School of Information, Production and Systems, **Waseda University**, with a background in **Software Engineering at Xiamen University**.
+I'm pursuing a master's degree at **Waseda University**'s Graduate School of Information, Production and Systems, following my studies in Software Engineering at **Xiamen University**.
 
-I build and evaluate software across **Linux systems, backend engineering, and applied AI**. I care about reliable implementations, reproducible experiments, and tests that reveal both system behavior and its limitations. I'm currently learning **digital hardware design and verification** as I explore research-oriented engineering.
-
-**Selected work:** [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark) · [PathReplay](https://github.com/TohruSu/PathReplay) · [RepoPort](https://github.com/TohruSu/RepoPort) · [PyPathDoctor](https://github.com/TohruSu/PyPathDoctor) · [RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer) · [AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)
+My work spans **Linux systems, backend engineering, and applied AI**, with a focus on building reliable software and evaluating it through meaningful testing and reproducible experiments. I'm also developing my foundation in **digital hardware design and verification** as I explore hardware-oriented research.
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
@@ -27,8 +25,16 @@ I'm strengthening my foundations in **hardware design and verification** while c
 ## Experience
 
 - **Rakuten Group · Software engineering intern** — Worked with Python/Flask and React/TypeScript on search features and the interface for a furniture discovery application.
-- **DENSO · Automotive SoC internship** — Used C and measurement tools to investigate system wake-up timing and performance issues.
+- **DENSO · Automotive SoC intern** — Used C and measurement tools to investigate system wake-up timing and performance issues.
 - **TokiTech · Web developer** — Worked on business applications with Java/Spring Boot, Vue.js, and databases.
+
+## Experience
+
+- **Rakuten Group · Software Engineering Intern** — Developed search features and frontend interfaces for a furniture discovery application using Python/Flask and React/TypeScript.
+- **ADK Holdings · Data Science Camp** — Analyzed consumer survey data with Python and developed a retail marketing strategy using STP, 3C, and 4P frameworks.
+- **DENSO · Automotive SoC Intern** — Investigated system wake-up latency and performance issues using C and measurement tools.
+- **TokiTech · Web Developer** — Developed business applications using Java/Spring Boot, Vue.js, and relational databases.
+- **BitMeta Technology (China) · Frontend Development Intern** — Contributed to website frontend development and maintenance.
 
 ## Featured projects
 
@@ -62,7 +68,7 @@ A lightweight PowerShell CLI that shows which Python-related commands your Windo
 
 - **Core implementation:** PowerShell command discovery, PATH precedence reporting, virtual-environment and WindowsApps checks, and practical diagnostic suggestions.
 - **My work:** MVP scoping, diagnostic review, targeted regression fixes, and release verification.
-- **Verification:** 29 automated tests, passing Windows PowerShell 5.1 / PowerShell 7 CI, and checks against a multi-installation Python environment. [v0.1.0 release](https://github.com/TohruSu/PyPathDoctor/releases/tag/v0.1.0).
+- **Verification:** 29 automated tests, passing Windows PowerShell 5.1 / PowerShell 7 CI, and checks against a multi-installation Python environment.
 
 ### [PathReplay — 2D Trajectory CSV Viewer](https://github.com/TohruSu/PathReplay)
 
@@ -148,6 +154,6 @@ Reinforcement learning · Path-tracking simulation
 
 ## Outside of code
 
-I play the piano, enjoy badminton, and occasionally spend far too much time editing music videos. I speak Chinese, Japanese, and English.
+I play the piano, enjoy badminton, and occasionally lose track of time editing music videos. I'm fond of Haruki Murakami's novels and the films of Christopher Nolan and Quentin Tarantino.
 
-Thanks for visiting. If something here catches your eye, feel free to explore the code!
+Thanks for stopping by! If anything catches your interest, feel free to explore my projects.
