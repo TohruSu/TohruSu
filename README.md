@@ -30,6 +30,10 @@ I'm strengthening my foundations in **hardware design and verification** while c
 - **TokiTech · Web Developer** — Developed business applications using Java/Spring Boot, Vue.js, and relational databases.
 - **BitMeta Technology (China) · Frontend Development Intern** — Contributed to website frontend development and maintenance.
 
+## Open-source contributions
+
+- **[Streams-API-Practices · PR #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** · *Merged October 2026* — Fixed Windows checkout failures by renaming 12 Markdown files with incompatible `?` characters and repairing related documentation navigation, including existing broken links.
+
 ## Featured projects
 
 My portfolio focuses on **systems programming, developer tooling, full-stack engineering, and reproducible algorithm experiments**, with additional work in computer vision, robotics simulation, and data analysis.
