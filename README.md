@@ -34,6 +34,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 - **[Streams-API-Practices · PR #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** · *Merged October 2026* — Fixed Windows checkout failures by renaming 12 Markdown files with incompatible `?` characters and repairing related documentation navigation, including existing broken links.
 
+- **[Archy · PR #576](https://github.com/hslee16/Archy/pull/576)** · *Merged October 2026* — Fixed pytest failures caused by inherited Git signing settings with isolated test configuration and regression coverage, verified against the full test suite.
+
 ## Featured projects
 
 My portfolio focuses on **systems programming, developer tooling, full-stack engineering, and reproducible algorithm experiments**, with additional work in computer vision, robotics simulation, and data analysis.
