@@ -32,6 +32,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[docformatter · PR #411](https://github.com/PyCQA/docformatter/pull/411)** · *Merged November 2026* — Fixed configuration-file parsing so `exclude` and `non-cap` options are read as lists, preventing recursive checks from silently skipping files, with 11 regression tests.
+
 - **[Streams-API-Practices · PR #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** · *Merged October 2026* — Fixed Windows checkout failures by renaming 12 Markdown files with incompatible `?` characters and repairing related documentation navigation, including existing broken links.
 
 - **[Archy · PR #576](https://github.com/hslee16/Archy/pull/576)** · *Merged October 2026* — Fixed pytest failures caused by inherited Git signing settings with isolated test configuration and regression coverage, verified against the full test suite.
