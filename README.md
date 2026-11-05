@@ -32,6 +32,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[ConfigUpdater · PR #188](https://github.com/pyscaffold/configupdater/pull/188)** · *Merged November 2026* — Fixed option and section removal so detached blocks can be reattached to another container, with regression tests covering deletion and removal methods.
+
 - **[docformatter · PR #411](https://github.com/PyCQA/docformatter/pull/411)** · *Merged November 2026* — Fixed configuration-file parsing so `exclude` and `non-cap` options are read as lists, preventing recursive checks from silently skipping files, with 11 regression tests.
 
 - **[Streams-API-Practices · PR #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** · *Merged October 2026* — Fixed Windows checkout failures by renaming 12 Markdown files with incompatible `?` characters and repairing related documentation navigation, including existing broken links.
