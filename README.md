@@ -32,6 +32,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[flake8-bugbear · PR #619](https://github.com/PyCQA/flake8-bugbear/pull/619)** · *Merged November 2026* — Improved B042 exception-initializer analysis to recognize explicit base initializer calls, with regression coverage for argument forwarding, parameter rebinding, and nested Python scopes.
+
 - **[ConfigUpdater · PR #188](https://github.com/pyscaffold/configupdater/pull/188)** · *Merged November 2026* — Fixed option and section removal so detached blocks can be reattached to another container, with regression tests covering deletion and removal methods.
 
 - **[docformatter · PR #411](https://github.com/PyCQA/docformatter/pull/411)** · *Merged November 2026* — Fixed configuration-file parsing so `exclude` and `non-cap` options are read as lists, preventing recursive checks from silently skipping files, with 11 regression tests.
