@@ -32,6 +32,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[setuptools-git-versioning · PR #168](https://github.com/dolfinus/setuptools-git-versioning/pull/168)** · *Merged November 2026* — Fixed Git archive version detection for hyphenated tags such as `2024-01-15`, preventing incorrect commit-distance parsing, with unit and end-to-end regression tests.
+
 - **[dunamai · PR #122](https://github.com/mtkennerly/dunamai/pull/122)** · *Merged November 2026 · Released in v1.26.5* — Fixed parent-directory Git archival metadata discovery for relative paths, with regression coverage for path traversal and search boundaries.
 
 - **[dunamai · PR #120](https://github.com/mtkennerly/dunamai/pull/120)** · *Merged November 2026 · Released in v1.26.4* — Fixed Git archive version parsing for hyphenated tags by correctly identifying commit-distance suffixes, with regression tests for tagged and post-tag commits.
