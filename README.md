@@ -32,6 +32,10 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[ConfigUpdater · PR #193](https://github.com/pyscaffold/configupdater/pull/193)** · *Merged November 2026* — Made `items(section)` raise `NoSectionError` for missing sections, matching `ConfigParser` and related ConfigUpdater methods, with a regression test and changelog entry.
+
+- **[argcomplete · PR #579](https://github.com/kislyuk/argcomplete/pull/579)** · *Merged November 2026* — Preserved `~`-prefixed directory completions in `DirectoriesCompleter` so `CompletionFinder`'s prefix validator accepts them, with end-to-end regression coverage.
+
 - **[setuptools-git-versioning · PR #168](https://github.com/dolfinus/setuptools-git-versioning/pull/168)** · *Merged November 2026* — Fixed Git archive version detection for hyphenated tags such as `2024-01-15`, preventing incorrect commit-distance parsing, with unit and end-to-end regression tests.
 
 - **[dunamai · PR #122](https://github.com/mtkennerly/dunamai/pull/122)** · *Merged November 2026 · Released in v1.26.5* — Fixed parent-directory Git archival metadata discovery for relative paths, with regression coverage for path traversal and search boundaries.
