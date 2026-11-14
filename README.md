@@ -32,6 +32,10 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[flake8-pyi · PR #561](https://github.com/PyCQA/flake8-pyi/pull/561)** · *Merged November 2026* — Fixed Y051 failing to detect redundant negative integer literals in unions with `int`, with regression tests for both PEP 604 and `typing.Union` syntax.
+
+- **[toml-sort · PR #110](https://github.com/pappasam/toml-sort/pull/110)** · *Merged November 2026* — Made TOML override patterns case-sensitive across platforms, preventing inconsistent sorting between Windows and Unix-like systems, with cross-platform regression tests.
+
 - **[pyjson5 · PR #167](https://github.com/dpranke/pyjson5/pull/167)** · *Merged November 2026* — Fixed the CLI incorrectly reading stdin or FILE when `-c ''` explicitly supplies an empty string, with regression tests for both fallback paths.
 
 - **[pytest-order · PR #277](https://github.com/pytest-dev/pytest-order/pull/277)** · *Merged November 2026* — Fixed multiple `order` markers being lost when a shared test function is collected more than once, including inherited test methods and imported test functions, with regression tests for both cases.
