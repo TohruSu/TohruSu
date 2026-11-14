@@ -32,6 +32,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **[pyjson5 · PR #167](https://github.com/dpranke/pyjson5/pull/167)** · *Merged November 2026* — Fixed the CLI incorrectly reading stdin or FILE when `-c ''` explicitly supplies an empty string, with regression tests for both fallback paths.
+
 - **[pytest-order · PR #277](https://github.com/pytest-dev/pytest-order/pull/277)** · *Merged November 2026* — Fixed multiple `order` markers being lost when a shared test function is collected more than once, including inherited test methods and imported test functions, with regression tests for both cases.
 
 - **[setuptools-git-versioning · PR #169](https://github.com/dolfinus/setuptools-git-versioning/pull/169)** · *Merged November 2026* — Fixed Windows `{timestamp}`, `{timestamp:}`, and `{timestamp:%s}` substitutions by computing Unix timestamps without platform-dependent `strftime("%s")`, with portable regression tests and a changelog entry.
