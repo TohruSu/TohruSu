@@ -37,18 +37,18 @@ Selected work in systems programming, developer tooling, full-stack development,
 - **[Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)** · C/POSIX, Python — Measure Linux scheduling latency with reproducible benchmarks.
 - **[RepoPort](https://github.com/TohruSu/RepoPort)** · Python, Git — Detect filename portability issues across operating systems.
 - **[RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer)** · React, Flask, SQLite — Full-stack furniture catalog with search, comparison, and favorites.
-- **[RunMatrix](https://github.com/TohruSu/RunMatrix)** · React, TypeScript — Compare JUnit test reports with an interactive status matrix. [Live demo](https://tohrusu.github.io/RunMatrix/).
-- **[PathReplay](https://github.com/TohruSu/PathReplay)** · React, TypeScript — Visualize and replay 2D trajectories from CSV files. [Live demo](https://tohrusu.github.io/PathReplay/).
-- **[CuePair](https://github.com/TohruSu/CuePair)** · React, TypeScript — Compare subtitle timelines and identify timing differences. [Live demo](https://tohrusu.github.io/CuePair/).
+- **[Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)** · Python, Jetson Nano — Combine pose, speech, and depth cues for emergency alerts.
+- **[Autonomous Tractor Navigation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)** · C#, .NET — Simulate and compare autonomous path-tracking controllers.
+- **[Retail Customer Segmentation](https://github.com/TohruSu/retail-customer-segmentation)** · Python, scikit-learn — Analyze customer segments and develop a retail strategy.
 
 <details>
 <summary>More projects (5)</summary>
 
 - **[PyPathDoctor](https://github.com/TohruSu/PyPathDoctor)** · PowerShell — Diagnose Python command resolution and PATH precedence on Windows.
 - **[AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)** · Python, Q-Learning — Evaluate adaptive job scheduling against fixed policies.
-- **[Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)** · Python, Jetson Nano — Combine pose, speech, and depth cues for emergency alerts.
-- **[Autonomous Tractor Navigation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)** · C#, .NET — Simulate and compare autonomous path-tracking controllers.
-- **[Retail Customer Segmentation](https://github.com/TohruSu/retail-customer-segmentation)** · Python, scikit-learn — Analyze customer segments and develop a retail strategy.
+- **[RunMatrix](https://github.com/TohruSu/RunMatrix)** · React, TypeScript — Compare JUnit test reports with an interactive status matrix. [Live demo](https://tohrusu.github.io/RunMatrix/).
+- **[PathReplay](https://github.com/TohruSu/PathReplay)** · React, TypeScript — Visualize and replay 2D trajectories from CSV files. [Live demo](https://tohrusu.github.io/PathReplay/).
+- **[CuePair](https://github.com/TohruSu/CuePair)** · React, TypeScript — Compare subtitle timelines and identify timing differences. [Live demo](https://tohrusu.github.io/CuePair/).
 
 </details>
 
