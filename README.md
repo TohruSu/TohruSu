@@ -24,157 +24,50 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Experience
 
-- **Rakuten Group · Software Engineering Intern** — Developed search features and frontend interfaces for a furniture discovery application using Python/Flask and React/TypeScript.
-- **ADK Holdings · Data Science Camp** — Analyzed consumer survey data with Python and developed a retail marketing strategy using STP, 3C, and 4P frameworks.
-- **DENSO · Automotive SoC Intern** — Investigated system wake-up latency and performance issues using C and measurement tools.
-- **TokiTech · Web Developer** — Developed business applications using Java/Spring Boot, Vue.js, and relational databases.
-- **BitMeta Technology (China) · Frontend Development Intern** — Contributed to website frontend development and maintenance.
-
-## Open-source contributions
-
-- **[flake8-pyi · PR #561](https://github.com/PyCQA/flake8-pyi/pull/561)** · *Merged November 2026* — Fixed Y051 failing to detect redundant negative integer literals in unions with `int`, with regression tests for both PEP 604 and `typing.Union` syntax.
-
-- **[toml-sort · PR #110](https://github.com/pappasam/toml-sort/pull/110)** · *Merged November 2026* — Made TOML override patterns case-sensitive across platforms, preventing inconsistent sorting between Windows and Unix-like systems, with cross-platform regression tests.
-
-- **[pyjson5 · PR #167](https://github.com/dpranke/pyjson5/pull/167)** · *Merged November 2026* — Fixed the CLI incorrectly reading stdin or FILE when `-c ''` explicitly supplies an empty string, with regression tests for both fallback paths.
-
-- **[pytest-order · PR #277](https://github.com/pytest-dev/pytest-order/pull/277)** · *Merged November 2026* — Fixed multiple `order` markers being lost when a shared test function is collected more than once, including inherited test methods and imported test functions, with regression tests for both cases.
-
-- **[setuptools-git-versioning · PR #169](https://github.com/dolfinus/setuptools-git-versioning/pull/169)** · *Merged November 2026* — Fixed Windows `{timestamp}`, `{timestamp:}`, and `{timestamp:%s}` substitutions by computing Unix timestamps without platform-dependent `strftime("%s")`, with portable regression tests and a changelog entry.
-
-- **[ConfigUpdater · PR #193](https://github.com/pyscaffold/configupdater/pull/193)** · *Merged November 2026* — Made `items(section)` raise `NoSectionError` for missing sections, matching `ConfigParser` and related ConfigUpdater methods, with a regression test and changelog entry.
-
-- **[argcomplete · PR #579](https://github.com/kislyuk/argcomplete/pull/579)** · *Merged November 2026* — Preserved `~`-prefixed directory completions in `DirectoriesCompleter` so `CompletionFinder`'s prefix validator accepts them, with end-to-end regression coverage.
-
-- **[setuptools-git-versioning · PR #168](https://github.com/dolfinus/setuptools-git-versioning/pull/168)** · *Merged November 2026* — Fixed Git archive version detection for hyphenated tags such as `2024-01-15`, preventing incorrect commit-distance parsing, with unit and end-to-end regression tests.
-
-- **[dunamai · PR #122](https://github.com/mtkennerly/dunamai/pull/122)** · *Merged November 2026 · Released in v1.26.5* — Fixed parent-directory Git archival metadata discovery for relative paths, with regression coverage for path traversal and search boundaries.
-
-- **[dunamai · PR #120](https://github.com/mtkennerly/dunamai/pull/120)** · *Merged November 2026 · Released in v1.26.4* — Fixed Git archive version parsing for hyphenated tags by correctly identifying commit-distance suffixes, with regression tests for tagged and post-tag commits.
-
-- **[flake8-bugbear · PR #619](https://github.com/PyCQA/flake8-bugbear/pull/619)** · *Merged November 2026* — Improved B042 exception-initializer analysis to recognize explicit base initializer calls, with regression coverage for argument forwarding, parameter rebinding, and nested Python scopes.
-
-- **[ConfigUpdater · PR #188](https://github.com/pyscaffold/configupdater/pull/188)** · *Merged November 2026* — Fixed option and section removal so detached blocks can be reattached to another container, with regression tests covering deletion and removal methods.
-
-- **[docformatter · PR #411](https://github.com/PyCQA/docformatter/pull/411)** · *Merged November 2026* — Fixed configuration-file parsing so `exclude` and `non-cap` options are read as lists, preventing recursive checks from silently skipping files, with 11 regression tests.
-
-- **[Streams-API-Practices · PR #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** · *Merged October 2026* — Fixed Windows checkout failures by renaming 12 Markdown files with incompatible `?` characters and repairing related documentation navigation, including existing broken links.
-
-- **[Archy · PR #576](https://github.com/hslee16/Archy/pull/576)** · *Merged October 2026* — Fixed pytest failures caused by inherited Git signing settings with isolated test configuration and regression coverage, verified against the full test suite.
+- **Rakuten Group · Software Engineering Intern** — Built search features and interfaces using Flask and React/TypeScript.
+- **DENSO · Automotive SoC Intern** — Investigated system wake-up latency and performance using C.
+- **TokiTech · Web Developer** — Developed web applications with Spring Boot, Vue.js, and relational databases.
+- **BitMeta Technology (China) · Frontend Development Intern** — Contributed to website development and maintenance.
+- **ADK Holdings · Data Science Camp** — Analyzed consumer data and developed a retail marketing strategy.
 
 ## Featured projects
 
-My portfolio focuses on **systems programming, developer tooling, full-stack engineering, and reproducible algorithm experiments**, with additional work in computer vision, robotics simulation, and data analysis.
+Selected work in systems programming, developer tooling, full-stack development, and applied research.
 
-### [Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)
+- **[Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)** · C/POSIX, Python — Measure Linux scheduling latency with reproducible benchmarks.
+- **[RepoPort](https://github.com/TohruSu/RepoPort)** · Python, Git — Detect filename portability issues across operating systems.
+- **[RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer)** · React, Flask, SQLite — Full-stack furniture catalog with search, comparison, and favorites.
+- **[RunMatrix](https://github.com/TohruSu/RunMatrix)** · React, TypeScript — Compare JUnit test reports with an interactive status matrix. [Live demo](https://tohrusu.github.io/RunMatrix/).
+- **[PathReplay](https://github.com/TohruSu/PathReplay)** · React, TypeScript — Visualize and replay 2D trajectories from CSV files. [Live demo](https://tohrusu.github.io/PathReplay/).
+- **[CuePair](https://github.com/TohruSu/CuePair)** · React, TypeScript — Compare subtitle timelines and identify timing differences. [Live demo](https://tohrusu.github.io/CuePair/).
 
-*C11 · Linux/POSIX · Python · GitHub Actions*
+<details>
+<summary>More projects (5)</summary>
 
-A Linux toolkit for measuring application-observed wake-up lateness and analyzing the resulting CSV data.
+- **[PyPathDoctor](https://github.com/TohruSu/PyPathDoctor)** · PowerShell — Diagnose Python command resolution and PATH precedence on Windows.
+- **[AdaptiveQueue](https://github.com/TohruSu/adaptivequeue)** · Python, Q-Learning — Evaluate adaptive job scheduling against fixed policies.
+- **[Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)** · Python, Jetson Nano — Combine pose, speech, and depth cues for emergency alerts.
+- **[Autonomous Tractor Navigation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)** · C#, .NET — Simulate and compare autonomous path-tracking controllers.
+- **[Retail Customer Segmentation](https://github.com/TohruSu/retail-customer-segmentation)** · Python, scikit-learn — Analyze customer segments and develop a retail strategy.
 
-- **Core implementation:** Absolute monotonic scheduling, checked timestamp arithmetic, and skipped-period accounting.
-- **My work:** C collector and Python analysis pipeline with strict CSV validation, descriptive statistics, and visualizations.
-- **Verification:** C/Python tests, ASan/UBSan, and GCC/Clang GitHub Actions.
+</details>
 
-### [RepoPort — Git Filename Portability Checker](https://github.com/TohruSu/RepoPort)
+## Open-source contributions
 
-*Python 3.11+ · Git · Unicode · GitHub Actions*
+**15 merged PRs across 12 upstream repositories**, focused on correctness, portability, and regression testing.
 
-A small, read-only CLI that flags potentially non-portable Git-tracked paths, including case/Unicode collisions and Windows-incompatible names.
-
-- **Core implementation:** NUL-delimited Git index scanning, Unicode case/NFC checks, Windows filename rules, deterministic diagnostics, and CI-friendly exit codes.
-- **My work:** MVP scoping and acceptance criteria, implementation review, regression testing, and release validation.
-- **Verification:** 19 automated tests, Ubuntu/Windows CI with Python 3.11/3.14.
-
-### [PyPathDoctor — Windows Python Command Diagnostics](https://github.com/TohruSu/PyPathDoctor)
-
-*PowerShell 5.1 / 7 · Windows · GitHub Actions*
-
-A lightweight PowerShell CLI that shows which Python-related commands your Windows terminal finds and how PATH affects their resolution.
-
-- **Core implementation:** PowerShell command discovery, PATH precedence reporting, virtual-environment and WindowsApps checks, and practical diagnostic suggestions.
-- **My work:** MVP scoping, diagnostic review, targeted regression fixes, and release verification.
-- **Verification:** 29 automated tests, passing Windows PowerShell 5.1 / PowerShell 7 CI, and checks against a multi-installation Python environment.
-
-### [PathReplay — 2D Trajectory CSV Viewer](https://github.com/TohruSu/PathReplay)
-
-*React · TypeScript · Vite · SVG · Vitest · GitHub Actions*
-
-A browser-based tool for comparing and replaying 2D trajectories from local CSV files. [Try the live demo](https://tohrusu.github.io/PathReplay/).
-
-- **Core implementation:** Local CSV validation and grouping, equal-scale SVG plotting, timestamp-based interpolation, and interactive replay for one or two trajectories.
-- **My work:** MVP scoping and acceptance criteria, implementation review, regression verification, and browser-based release acceptance.
-- **Verification:** 52 automated tests, successful CI and GitHub Pages deployment, and import of 14,342 synthetic simulator samples across 28 trajectory runs.
-
-### [CuePair — Subtitle Timeline Comparator](https://github.com/TohruSu/CuePair)
-
-*React · TypeScript · Vite · Vitest · GitHub Actions*
-
-A browser-based tool for comparing original and translated subtitle tracks by timing, even when their cue counts or segmentation differ. [Try the live demo](https://tohrusu.github.io/CuePair/).
-
-- **Core implementation:** UTF-8 SRT parsing, sweep-line and union-find temporal grouping, unmatched cue and timing-overlap detection, and interactive timeline navigation.
-- **My work:** MVP scoping, implementation review, randomized correctness verification, browser testing, and release validation.
-- **Verification:** 45 automated tests, independent randomized grouping checks, passing CI, and GitHub Pages deployment.
-
-### [RunMatrix — JUnit Test Run Comparator](https://github.com/TohruSu/RunMatrix)
-
-*React · TypeScript · Vite · Vitest · GitHub Actions*
-
-A browser-based tool for comparing JUnit XML test reports across runs, with a visual status matrix and failure inspection. [Try the live demo](https://tohrusu.github.io/RunMatrix/).
-
-- **Core implementation:** XML report validation, stable test identity matching, outcome classification, report reordering, and interactive matrix navigation.
-- **My work:** MVP scoping, correctness review, independent comparison checks, browser acceptance, and release preparation.
-- **Verification:** 77 automated tests, independent classification checks, passing CI, and GitHub Pages deployment.
-
-### [RoomShelf — Furniture Catalog Explorer](https://github.com/TohruSu/roomshelf-catalog-explorer)
-
-*React 19 · TypeScript · Flask · SQLite · Playwright*
-
-A full-stack furniture catalog for exploring products, comparing specifications, and saving favorites without an account.
-
-- **Core implementation:** URL-driven catalog queries, product comparison, transactional SQLite shortlists, and signed sessions with CSRF/Origin checks.
-- **My work:** Project scoping, technical design, feature development and review, testing, and documentation.
-- **Verification:** 393 backend tests, 223 frontend tests, 40 Chromium browser tests, and GitHub Actions.
-
-### [AdaptiveQueue — RL Job Scheduling](https://github.com/TohruSu/adaptivequeue)
-
-*Python · Tabular Q-Learning · Scheduling Algorithms · pytest · GitHub Actions*
-
-A scheduling simulator that explores when learned policy selection can improve on fixed rules under changing job workloads.
-
-- **Core implementation:** Discrete-time task simulation, four deterministic scheduling baselines, and a tabular Q-Learning meta-scheduler.
-- **My work:** Scheduling and reward design, implementation review, and reproducible benchmark analysis.
-- **Verification:** 81 automated tests, Python 3.10/3.12 CI, and 720 seeded evaluation records across three workload scenarios.
-
-### [Jetson Multimodal Emergency Detection](https://github.com/TohruSu/jetson-multimodal-emergency-detection)
-
-*Python · Jetson Nano · Depth Anything V2 · Multiprocessing · PyQt5*
-
-A university team prototype combining pose-based fall detection, speech help keywords, and relative depth for contextual alerts.
-
-- **Core implementation:** Sensor and inference workers, event-fusion logic, and a PyQt5 monitoring interface.
-- **My work:** Depth Anything V2 integration, person ROI processing, and pose-to-depth handoff.
-- **Verification:** 132 automated tests, a synthetic five-worker smoke test, and GitHub Actions.
-
-### [Autonomous Tractor Navigation Simulation](https://github.com/TohruSu/autonomous-tractor-navigation-sim)
-
-*C# · .NET 10 · Stanley / Pure Pursuit · GitHub Actions*
-
-A standalone toolkit for reproducible path tracking and controller evaluation on synthetic routes.
-
-- **Core implementation:** Stanley and Pure Pursuit controllers, deterministic bicycle-model simulation, and steering constraints.
-- **My work:** Seven synthetic scenarios, CSV evaluation metrics, and trajectory comparisons across four controller configurations.
-- **Verification:** 61 automated tests, repeatable CSV/SVG outputs, and GitHub Actions.
-
-### [Retail Customer Segmentation & Strategy](https://github.com/TohruSu/retail-customer-segmentation)
-
-*Python · pandas · scikit-learn · PCA / KMeans · GitHub Actions*
-
-From exploring shopping behavior to designing 「今日の食えらび編集室」, a meal-choice experience for food retail.
-
-- **Core implementation:** Synthetic data generation, preprocessing, PCA/KMeans diagnostics, and an eight-stage analysis workflow.
-- **My work:** Customer analysis, interpretation, and the original meal-choice retail strategy concept.
-- **Verification:** 72 automated tests, eight executable notebooks, reproducible outputs, and Python 3.11–3.13 CI.
+- **[flake8-pyi #561](https://github.com/PyCQA/flake8-pyi/pull/561)** — Detect redundant negative integer literals in unions.
+- **[toml-sort #110](https://github.com/pappasam/toml-sort/pull/110)** — Ensure case-sensitive TOML override matching across platforms.
+- **[pyjson5 #167](https://github.com/dpranke/pyjson5/pull/167)** — Fix empty `-c` CLI input handling.
+- **[pytest-order #277](https://github.com/pytest-dev/pytest-order/pull/277)** — Preserve ordering markers across repeated test collection.
+- **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
+- **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
+- **[argcomplete #579](https://github.com/kislyuk/argcomplete/pull/579)** — Preserve tilde-prefixed directory completions.
+- **dunamai** · [#122](https://github.com/mtkennerly/dunamai/pull/122), [#120](https://github.com/mtkennerly/dunamai/pull/120) — Fix Git archive metadata discovery and tag parsing.
+- **[flake8-bugbear #619](https://github.com/PyCQA/flake8-bugbear/pull/619)** — Improve exception-initializer analysis.
+- **[docformatter #411](https://github.com/PyCQA/docformatter/pull/411)** — Correct INI list-option parsing.
+- **[Streams-API-Practices #29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** — Fix Windows-incompatible filenames and documentation links.
+- **[Archy #576](https://github.com/hslee16/Archy/pull/576)** — Isolate Git signing settings in tests.
 
 ## Tools I use
 
