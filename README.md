@@ -56,18 +56,18 @@ Selected work in systems programming, developer tooling, full-stack development,
 
 **15 merged PRs across 12 upstream repositories**, focused on correctness, portability, and regression testing.
 
-- **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561)** — Detect redundant negative integer literals in unions.
-- **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110)** — Ensure case-sensitive TOML override matching across platforms.
-- **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167)** — Fix empty `-c` CLI input handling.
-- **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277)** — Preserve ordering markers across repeated test collection.
+- **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
+- **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
+- **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
+- **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277) — Preserve ordering markers across repeated test collection.
 - **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
 - **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
-- **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579)** — Preserve tilde-prefixed directory completions.
+- **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579) — Preserve tilde-prefixed directory completions.
 - **dunamai** · [#122](https://github.com/mtkennerly/dunamai/pull/122), [#120](https://github.com/mtkennerly/dunamai/pull/120) — Fix Git archive metadata discovery and tag parsing.
-- **flake8-bugbear** · [#619](https://github.com/PyCQA/flake8-bugbear/pull/619)** — Improve exception-initializer analysis.
-- **docformatter** · [#411](https://github.com/PyCQA/docformatter/pull/411)** — Correct INI list-option parsing.
-- **Streams-API-Practices** · [#29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29)** — Fix Windows-incompatible filenames and documentation links.
-- **Archy** · [#576](https://github.com/hslee16/Archy/pull/576)** — Isolate Git signing settings in tests.
+- **flake8-bugbear** · [#619](https://github.com/PyCQA/flake8-bugbear/pull/619) — Improve exception-initializer analysis.
+- **docformatter** · [#411](https://github.com/PyCQA/docformatter/pull/411) — Correct INI list-option parsing.
+- **Streams-API-Practices** · [#29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29) — Fix Windows-incompatible filenames and documentation links.
+- **Archy** · [#576](https://github.com/hslee16/Archy/pull/576) — Isolate Git signing settings in tests.
 
 ## Tools I use
 
