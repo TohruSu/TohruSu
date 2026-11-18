@@ -52,6 +52,7 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **cog** · [#107](https://github.com/nedbat/cog/pull/107) — Fix creation of single-level output directories when using `-o`.
 - **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
 - **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
 - **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
