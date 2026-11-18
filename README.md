@@ -11,7 +11,7 @@ I'm pursuing a master's degree at **Waseda University**'s Graduate School of Inf
 
 My work spans **Linux systems, backend engineering, and applied AI**, with a focus on building reliable software and evaluating it through meaningful testing and reproducible experiments. I'm also developing my foundation in **digital hardware design and verification** as I explore hardware-oriented research.
 
-**Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [ORCID](https://orcid.org/0009-0002-5960-6106)
+**Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [DEV Community](https://dev.to/tohrusu) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
 ## Current focus
 
@@ -32,8 +32,6 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Featured projects
 
-Selected work in systems programming, developer tooling, full-stack development, and applied research.
-
 - **[Linux Wake-up Latency Benchmark](https://github.com/TohruSu/linux-wakeup-latency-benchmark)** · C/POSIX, Python — Measure Linux scheduling latency with reproducible benchmarks.
 - **[RepoPort](https://github.com/TohruSu/RepoPort)** · Python, Git — Detect filename portability issues across operating systems.
 - **[RoomShelf](https://github.com/TohruSu/roomshelf-catalog-explorer)** · React, Flask, SQLite — Full-stack furniture catalog with search, comparison, and favorites.
@@ -53,8 +51,6 @@ Selected work in systems programming, developer tooling, full-stack development,
 </details>
 
 ## Open-source contributions
-
-**15 merged PRs across 12 upstream repositories**, focused on correctness, portability, and regression testing.
 
 - **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
 - **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
@@ -93,6 +89,8 @@ Reinforcement learning · Path-tracking simulation
 
 ## Outside of code
 
-I play the piano, enjoy badminton, and occasionally lose track of time editing music videos. I'm fond of Haruki Murakami's novels and the films of Christopher Nolan and Quentin Tarantino.
+I play the piano, enjoy badminton, and occasionally lose track of time editing music videos.
+
+I'm fond of Haruki Murakami's novels and the films of Christopher Nolan and Quentin Tarantino.
 
 Thanks for stopping by! If anything catches your interest, feel free to explore my projects.
