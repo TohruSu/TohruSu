@@ -52,6 +52,7 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **Pode** · [#1827](https://github.com/Badgerati/Pode/pull/1827) — Fix HTTP chunked request parsing when the body arrives after the headers.
 - **diff_cover** · [#658](https://github.com/Bachmann1234/diff_cover/pull/658) — Fix changed-line numbering when Git marks a missing final newline.
 - **cog** · [#107](https://github.com/nedbat/cog/pull/107) — Fix creation of single-level output directories when using `-o`.
 - **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
