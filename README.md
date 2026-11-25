@@ -62,6 +62,10 @@ I'm strengthening my foundations in **hardware design and verification** while c
 - **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
 - **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277) — Preserve ordering markers across repeated test collection.
 - **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
+
+<details>
+<summary>More contributions (7)</summary>
+
 - **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
 - **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579) — Preserve tilde-prefixed directory completions.
 - **dunamai** · [#122](https://github.com/mtkennerly/dunamai/pull/122), [#120](https://github.com/mtkennerly/dunamai/pull/120) — Fix Git archive metadata discovery and tag parsing.
@@ -69,6 +73,8 @@ I'm strengthening my foundations in **hardware design and verification** while c
 - **docformatter** · [#411](https://github.com/PyCQA/docformatter/pull/411) — Correct INI list-option parsing.
 - **Streams-API-Practices** · [#29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29) — Fix Windows-incompatible filenames and documentation links.
 - **Archy** · [#576](https://github.com/hslee16/Archy/pull/576) — Isolate Git signing settings in tests.
+
+</details>
 
 ## Tools I use
 
