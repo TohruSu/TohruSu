@@ -52,6 +52,7 @@ I'm strengthening my foundations in **hardware design and verification** while c
 
 ## Open-source contributions
 
+- **pyinfra** · [#2107](https://github.com/pyinfra-dev/pyinfra/pull/2107) — Fix APT package detection when another package provides the requested name.
 - **Commitizen** · [#2128](https://github.com/commitizen-tools/commitizen/pull/2128) — Respect Git's `core.eol` setting across version providers.
 - **Pode** · [#1827](https://github.com/Badgerati/Pode/pull/1827) — Fix HTTP chunked request parsing when the body arrives after the headers.
 - **diff_cover** · [#658](https://github.com/Bachmann1234/diff_cover/pull/658) — Fix changed-line numbering when Git marks a missing final newline.
