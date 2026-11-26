@@ -9,7 +9,7 @@
 
 I'm pursuing a master's degree at **Waseda University**'s Graduate School of Information, Production and Systems, following my studies in Software Engineering at **Xiamen University**.
 
-My work spans **Linux systems, backend engineering, and applied AI**, with a focus on building reliable software and evaluating it through meaningful testing and reproducible experiments. I'm also developing my foundation in **digital hardware design and verification** as I explore hardware-oriented research.
+My work spans Linux systems, backend engineering, and applied AI, with a focus on software reliability, rigorous testing, and reproducible evaluation. At Kimura Lab, I'm exploring LLM-assisted hardware verification.
 
 **Connect:** [Email](mailto:suyanyu.cs@gmail.com) · [University email](mailto:yanyu.su@toki.waseda.jp) · [LinkedIn](https://www.linkedin.com/in/tohru-watanabe) · [DEV Community](https://dev.to/tohrusu) · [ORCID](https://orcid.org/0009-0002-5960-6106)
 
@@ -20,7 +20,11 @@ My work spans **Linux systems, backend engineering, and applied AI**, with a foc
   <img src="./assets/prompt.gif" width="24" height="16" alt="">
 </picture> <strong>Currently</strong>
 
-I'm strengthening my foundations in **hardware design and verification** while continuing work on **Linux performance measurement, backend systems, and reproducible experimental evaluation**.
+My current research explores how RTL static analysis and large language models can support the generation of SystemVerilog Assertions (SVA) from structural information and independent design specifications.
+
+I'm investigating how to evaluate generated assertions beyond syntactic correctness, with an emphasis on specification consistency and defect detection.
+
+Alongside my research, I continue to work on Linux systems, developer tooling, and open-source software, emphasizing correctness, regression testing, and reproducibility.
 
 ## Experience
 
