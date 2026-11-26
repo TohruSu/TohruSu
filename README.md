@@ -56,6 +56,7 @@ Alongside my research, I continue to work on Linux systems, developer tooling, a
 
 ## Open-source contributions
 
+- **bump-my-version** · [#465](https://github.com/callowayproject/bump-my-version/pull/465) — Preserve configuration file line endings during version bumps.
 - **pyinfra** · [#2107](https://github.com/pyinfra-dev/pyinfra/pull/2107) — Fix APT package detection when another package provides the requested name.
 - **Commitizen** · [#2128](https://github.com/commitizen-tools/commitizen/pull/2128) — Respect Git's `core.eol` setting across version providers.
 - **Pode** · [#1827](https://github.com/Badgerati/Pode/pull/1827) — Fix HTTP chunked request parsing when the body arrives after the headers.
@@ -65,11 +66,11 @@ Alongside my research, I continue to work on Linux systems, developer tooling, a
 - **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
 - **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
 - **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277) — Preserve ordering markers across repeated test collection.
-- **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
 
 <details>
-<summary>More contributions (7)</summary>
+<summary>More contributions (8)</summary>
 
+- **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
 - **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
 - **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579) — Preserve tilde-prefixed directory completions.
 - **dunamai** · [#122](https://github.com/mtkennerly/dunamai/pull/122), [#120](https://github.com/mtkennerly/dunamai/pull/120) — Fix Git archive metadata discovery and tag parsing.
