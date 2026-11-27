@@ -56,27 +56,28 @@ Alongside my research, I continue to work on Linux systems, developer tooling, a
 
 ## Open-source contributions
 
-- **bump-my-version** · [#465](https://github.com/callowayproject/bump-my-version/pull/465) — Preserve configuration file line endings during version bumps.
-- **pyinfra** · [#2107](https://github.com/pyinfra-dev/pyinfra/pull/2107) — Fix APT package detection when another package provides the requested name.
+- **pyinfra** · [#2107](https://github.com/pyinfra-dev/pyinfra/pull/2107), [#2115](https://github.com/pyinfra-dev/pyinfra/pull/2115) — Fix APT package detection and eliminate unnecessary provider lookups for installed packages.
 - **Commitizen** · [#2128](https://github.com/commitizen-tools/commitizen/pull/2128) — Respect Git's `core.eol` setting across version providers.
+- **Pester** · [#3063](https://github.com/pester/Pester/pull/3063) — Resolve relative repository roots against the PowerShell session location.
+- **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579) — Preserve tilde-prefixed directory completions.
+- **flake8-bugbear** · [#619](https://github.com/PyCQA/flake8-bugbear/pull/619) — Improve exception-initializer analysis.
 - **Pode** · [#1827](https://github.com/Badgerati/Pode/pull/1827) — Fix HTTP chunked request parsing when the body arrives after the headers.
 - **diff_cover** · [#658](https://github.com/Bachmann1234/diff_cover/pull/658) — Fix changed-line numbering when Git marks a missing final newline.
+- **bump-my-version** · [#465](https://github.com/callowayproject/bump-my-version/pull/465) — Preserve configuration file line endings during version bumps.
+- **docformatter** · [#411](https://github.com/PyCQA/docformatter/pull/411) — Correct INI list-option parsing.
 - **cog** · [#107](https://github.com/nedbat/cog/pull/107) — Fix creation of single-level output directories when using `-o`.
-- **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
-- **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
-- **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
-- **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277) — Preserve ordering markers across repeated test collection.
 
 <details>
-<summary>More contributions (8)</summary>
+<summary>More contributions (9)</summary>
 
-- **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
-- **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
-- **argcomplete** · [#579](https://github.com/kislyuk/argcomplete/pull/579) — Preserve tilde-prefixed directory completions.
 - **dunamai** · [#122](https://github.com/mtkennerly/dunamai/pull/122), [#120](https://github.com/mtkennerly/dunamai/pull/120) — Fix Git archive metadata discovery and tag parsing.
-- **flake8-bugbear** · [#619](https://github.com/PyCQA/flake8-bugbear/pull/619) — Improve exception-initializer analysis.
-- **docformatter** · [#411](https://github.com/PyCQA/docformatter/pull/411) — Correct INI list-option parsing.
+- **pyjson5** · [#167](https://github.com/dpranke/pyjson5/pull/167) — Fix empty `-c` CLI input handling.
+- **pytest-order** · [#277](https://github.com/pytest-dev/pytest-order/pull/277) — Preserve ordering markers across repeated test collection.
+- **toml-sort** · [#110](https://github.com/pappasam/toml-sort/pull/110) — Ensure case-sensitive TOML override matching across platforms.
 - **Streams-API-Practices** · [#29](https://github.com/ZahidFKhan/Streams-API-Practices/pull/29) — Fix Windows-incompatible filenames and documentation links.
+- **flake8-pyi** · [#561](https://github.com/PyCQA/flake8-pyi/pull/561) — Detect redundant negative integer literals in unions.
+- **ConfigUpdater** · [#193](https://github.com/pyscaffold/configupdater/pull/193), [#188](https://github.com/pyscaffold/configupdater/pull/188) — Correct missing-section errors and detached-block handling.
+- **setuptools-git-versioning** · [#169](https://github.com/dolfinus/setuptools-git-versioning/pull/169), [#168](https://github.com/dolfinus/setuptools-git-versioning/pull/168) — Fix Windows timestamps and hyphenated Git tag parsing.
 - **Archy** · [#576](https://github.com/hslee16/Archy/pull/576) — Isolate Git signing settings in tests.
 
 </details>
